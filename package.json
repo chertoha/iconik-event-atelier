@@ -1,0 +1,19 @@
+{
+  "name": "iconik-event-atelier",
+  "version": "1.0.0",
+  "description": "",
+  "main": "index.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/chertoha/iconik-event-atelier.git"
+  },
+  "author": "Anton Chertok",
+  "license": "ISC",
+  "bugs": {
+    "url": "https://github.com/chertoha/iconik-event-atelier/issues"
+  },
+  "homepage": "https://github.com/chertoha/iconik-event-atelier#readme"
+}
