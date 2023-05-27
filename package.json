@@ -15,5 +15,8 @@
   "bugs": {
     "url": "https://github.com/chertoha/iconik-event-atelier/issues"
   },
-  "homepage": "https://github.com/chertoha/iconik-event-atelier#readme"
+  "homepage": "https://github.com/chertoha/iconik-event-atelier#readme",
+  "devDependencies": {
+    "parcel": "^2.9.0"
+  }
 }
