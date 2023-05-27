@@ -19,6 +19,7 @@
   },
   "homepage": "https://chertoha.github.io/iconik-event-atelier",
   "devDependencies": {
+    "@parcel/transformer-pug": "^2.9.0",
     "parcel": "^2.9.0"
   }
 }
