@@ -4,7 +4,9 @@
   "description": "",
   "main": "index.js",
   "scripts": {
-    "test": "echo \"Error: no test specified\" && exit 1"
+    "test": "echo \"Error: no test specified\" && exit 1",
+    "start": "parcel src/*.pug --open --port 8001",
+    "build": "parcel build src/*.pug --public-url /iconik-event-atelier/"
   },
   "repository": {
     "type": "git",
@@ -15,7 +17,7 @@
   "bugs": {
     "url": "https://github.com/chertoha/iconik-event-atelier/issues"
   },
-  "homepage": "https://github.com/chertoha/iconik-event-atelier#readme",
+  "homepage": "https://chertoha.github.io/iconik-event-atelier",
   "devDependencies": {
     "parcel": "^2.9.0"
   }
