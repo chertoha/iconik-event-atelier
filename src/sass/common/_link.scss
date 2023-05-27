@@ -1,12 +1,7 @@
 .link {
-
-    // transition: color $default-transition-time $default-transition-function;
+    @include default-transition(color);
     text-decoration: none;
     color: inherit;
-
-    // &:visited {
-    //     color: inherit;
-    // }
 
     &:hover,
     &:focus,
