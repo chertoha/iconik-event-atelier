@@ -2,7 +2,6 @@
   "name": "iconik-event-atelier",
   "version": "1.0.0",
   "description": "",
-  "main": "index.js",
   "scripts": {
     "test": "echo \"Error: no test specified\" && exit 1",
     "start": "parcel src/*.pug --open --port 8001",
@@ -19,7 +18,11 @@
   },
   "homepage": "https://chertoha.github.io/iconik-event-atelier",
   "devDependencies": {
+    "@babel/core": "^7.22.1",
+    "@babel/parser": "^7.22.3",
+    "@babel/types": "^7.22.3",
     "@parcel/transformer-pug": "^2.9.0",
     "parcel": "^2.9.0"
-  }
+  },
+  "browserslist": "last 2 versions, not dead"
 }
