@@ -1,1 +1,0 @@
-# iconik-event-atelier
