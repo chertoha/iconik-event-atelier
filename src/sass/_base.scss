@@ -14,11 +14,8 @@ html {
 
 body {
   font-family: 'Manrope', sans-serif;
-  // font-family: "DM Sans", sans-serif;
-  // font-size: 14px;
-  // font-weight: 500;
-  // line-height: 1.76;
-  // background-color: $primary-background-color;
+  @extend %mobile-font-main-text;
+  background-color: $primary-background-color;
 }
 
 h1,
