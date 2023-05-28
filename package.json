@@ -25,5 +25,8 @@
     "@parcel/transformer-sass": "^2.9.0",
     "parcel": "^2.9.0"
   },
-  "browserslist": "last 2 versions, not dead"
+  "browserslist": "last 2 versions, not dead",
+  "dependencies": {
+    "modern-normalize": "^2.0.0"
+  }
 }
