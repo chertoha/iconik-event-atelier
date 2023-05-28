@@ -27,6 +27,7 @@
   },
   "browserslist": "last 2 versions, not dead",
   "dependencies": {
-    "modern-normalize": "^2.0.0"
+    "modern-normalize": "^2.0.0",
+    "swiper": "^9.3.2"
   }
 }

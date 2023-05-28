@@ -1,0 +1,13 @@
+.section-title {
+    text-align: center;
+    font-family: "Al Veshion";
+    @extend %mobile-font-heading-2;
+
+    @include mq('tablet') {
+        font-size: 32px;
+    }
+
+    @include mq('desktop') {
+        font-size: 48px;
+    }
+}

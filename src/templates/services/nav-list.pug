@@ -1,0 +1,11 @@
+block vars 
+    - var list = [{id:"id-1", label: "All services"},{id:"id-2", label: "DINE"},{id:"id-3", label: "RIDE"},{id:"id-4", label: "DISCOVER"},{id:"id-5", label: "RELAX"},{id:"id-6", label: "EXPERIENCE"}]
+
+ul.services-nav  
+    each item, index in list 
+        li.services-nav__item
+            if index===0
+                input(type="radio" id=item.id name="services-nav" checked).services-nav__button.visually-hidden
+            else 
+                input(type="radio" id=item.id name="services-nav").services-nav__button.visually-hidden
+            label(for=item.id).services-nav__label #{item.label}

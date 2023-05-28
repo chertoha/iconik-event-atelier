@@ -1,0 +1,48 @@
+.services__section-title {
+    margin-bottom: 20px;
+
+
+    // @include mq('tablet') {}
+
+    @include mq('desktop') {
+        margin-bottom: 40px;
+    }
+}
+
+.services-nav {
+    @extend %flex-center;
+}
+
+.services-nav__label {
+    cursor: pointer;
+
+    text-transform: uppercase;
+    font-weight: 700;
+    line-height: 1.333;
+    font-size: 12px;
+    color: $secondary-text-color;
+
+    border: 1px solid $secondary-text-color;
+    @include default-transition(border-color);
+    @include default-transition(color);
+
+    @include mq('desktop') {
+        display: flex;
+        align-items: center;
+        justify-content: center;
+        width: 157px;
+        padding-top: 19px;
+        padding-bottom: 19px;
+
+        font-size: 15px;
+    }
+
+    &:hover {
+        color: $primary-text-color;
+    }
+
+    .services-nav__button:checked~& {
+        border-color: $primary-text-color;
+    }
+
+}
