@@ -1,32 +1,16 @@
 extends templates/layout.pug
 
 block content 
-    header.header
-        .container header
+    include templates/header
+
     main
-        section.section
-            .container 
-                .hero hero
-        section.section 
-            .container
-                .services services
-        section.section 
-            .container
-                .about about
-        section.section 
-            .container
-                .membership membership    
-        section.section 
-            .container
-                .gallery gallery  
-        section.section 
-            .container
-                .events events  
-        section.section 
-            .container
-                .contacts contacts
-        section.section 
-            .container
-                .social social
-    footer.footer 
-        .container footer
+        include templates/hero
+        include templates/services
+        include templates/about
+        include templates/membership   
+        include templates/gallery 
+        include templates/events 
+        include templates/contacts
+        include templates/social 
+
+    include templates/footer
