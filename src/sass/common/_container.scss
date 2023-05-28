@@ -3,23 +3,18 @@
     padding-right: 15px;
     margin-left: auto;
     margin-right: auto;
+    max-width: 480px;
 
-    // @media screen and (min-width: $tablet) {
-    //     width: $tablet;
-    //     padding-left: 32px;
-    //     padding-right: 32px;
-    // }
+    outline: 3px solid green;
 
-    // @media screen and (min-width: $desktop) {
-    //     width: $desktop;
-    //     padding-left: 16px;
-    //     padding-right: 16px;
-    // }
+    @include mq('tablet') {
+        // max-width: $tablet-viewport-width;
+        max-width: none;
+    }
+
+    @include mq('desktop') {
+        max-width: $desktop-viewport-width;
+        padding-left: 20px;
+        padding-right: 20px;
+    }
 }
-
-
-
-// .test__container {
-//     height: 100px;
-//     background-color: teal;
-// }
