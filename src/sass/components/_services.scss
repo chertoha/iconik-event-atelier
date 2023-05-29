@@ -10,23 +10,94 @@
 }
 
 .services-nav {
-    @extend %flex-center;
+    position: relative;
+    max-width: 290px;
+    margin-left: auto;
+    margin-right: auto;
+
+    font-size: 12px;
+    font-weight: 700;
+    line-height: 1.333;
+}
+
+.services-nav__select {
+    padding: 15px 16px 15px 20px;
+    width: 100%;
+    @extend %flex-between;
+
+    text-align: left;
+    text-transform: uppercase;
+    font-weight: 700;
+
+    background-color: transparent;
+    border: 1px solid $secondary-text-color;
+    @include default-transition(fill);
+    @include default-transition(border-color);
+
+    &:hover {
+        border-color: $primary-text-color;
+        color: $primary-text-color;
+    }
+
+    &:hover>.icon {
+        fill: $primary-text-color;
+    }
+
+    @include mq('tablet') {
+        display: none;
+    }
+
+}
+
+.services-nav__icon {
+    fill: $secondary-text-color;
+}
+
+.services-nav__list {
+
+    @include mq('mobile-only') {
+        position: absolute;
+        top: 0;
+        left: 0;
+        width: 100%;
+
+        border: 1px solid $primary-text-color;
+        background-color: $primary-background-color;
+        display: none;
+    }
+
+    @include mq('tablet') {
+        display: flex;
+        justify-content: center;
+        align-items: center;
+    }
+
+
 }
 
 .services-nav__label {
     cursor: pointer;
+    display: block;
 
     text-transform: uppercase;
-    font-weight: 700;
-    line-height: 1.333;
-    font-size: 12px;
     color: $secondary-text-color;
-
-    border: 1px solid $secondary-text-color;
     @include default-transition(border-color);
     @include default-transition(color);
+    @include default-transition(background-color);
 
-    @include mq('desktop') {
+
+    @include mq('mobile-only') {
+        padding: 15px 16px 15px 20px;
+
+        &:hover {
+            background-color: $footer-background-color;
+        }
+    }
+
+
+
+
+    @include mq('tablet') {
         display: flex;
         align-items: center;
         justify-content: center;
@@ -35,6 +106,8 @@
         padding-bottom: 19px;
 
         font-size: 15px;
+
+        border: 1px solid $secondary-text-color;
     }
 
     &:hover {
