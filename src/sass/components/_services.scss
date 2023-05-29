@@ -11,13 +11,25 @@
 
 .services-nav {
     position: relative;
-    max-width: 290px;
+
     margin-left: auto;
     margin-right: auto;
+
 
     font-size: 12px;
     font-weight: 700;
     line-height: 1.333;
+
+
+    @include mq('mobile-only') {
+        max-width: 290px;
+        color: $secondary-text-color;
+        @include default-transition(color);
+
+        &:hover {
+            color: $primary-text-color;
+        }
+    }
 }
 
 .services-nav__select {
@@ -39,23 +51,28 @@
         color: $primary-text-color;
     }
 
-    &:hover>.icon {
-        fill: $primary-text-color;
-    }
-
     @include mq('tablet') {
         display: none;
     }
-
 }
 
 .services-nav__icon {
-    fill: $secondary-text-color;
+    display: none;
+
+    @include mq('mobile-only') {
+        display: block;
+        position: absolute;
+        right: 16px;
+        top: 50%;
+        transform: translateY(-50%);
+    }
 }
 
 .services-nav__list {
 
     @include mq('mobile-only') {
+        display: none;
+
         position: absolute;
         top: 0;
         left: 0;
@@ -63,16 +80,18 @@
 
         border: 1px solid $primary-text-color;
         background-color: $primary-background-color;
-        display: none;
+
+        &.is-open {
+            display: block;
+        }
     }
 
     @include mq('tablet') {
         display: flex;
         justify-content: center;
         align-items: center;
+        flex-wrap: wrap;
     }
-
-
 }
 
 .services-nav__label {
@@ -82,8 +101,8 @@
     text-transform: uppercase;
     color: $secondary-text-color;
     @include default-transition(border-color);
-    @include default-transition(color);
     @include default-transition(background-color);
+    @include default-transition(color);
 
 
     @include mq('mobile-only') {
@@ -93,9 +112,6 @@
             background-color: $footer-background-color;
         }
     }
-
-
-
 
     @include mq('tablet') {
         display: flex;
@@ -114,8 +130,17 @@
         color: $primary-text-color;
     }
 
-    .services-nav__button:checked~& {
-        border-color: $primary-text-color;
+
+}
+
+.services-nav__button:checked~.services-nav__label {
+    color: $primary-text-color;
+
+    @include mq('mobile-only') {
+        background-color: $footer-background-color;
     }
 
+    @include mq('tablet') {
+        border-color: $primary-text-color;
+    }
 }
