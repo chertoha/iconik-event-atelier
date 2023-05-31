@@ -102,9 +102,12 @@
                     .services-card__meta 
                         p.services-card__title  #{item.title}
                         .services-card__footer
-                            span.services-card__price #{item.currentPrice}
-                            span.services-card__price--old #{item.oldPrice}
-                            span.services-card__time #{item.time}
+                            span.services-card__price.services-card__price--right-offset #{item.currentPrice}
+                            span.services-card__price.services-card__price--old #{item.oldPrice}
+                            span.services-card__time 
+                                svg.icon.services-card__icon
+                                    use(href="./assets/images/icons.svg#clock") 
+                                | #{item.time}
 
     .swiper-button-prev.swiper__prev
         svg(width="36" height="36").icon
