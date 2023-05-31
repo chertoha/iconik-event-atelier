@@ -96,9 +96,11 @@
     .swiper-wrapper.services-swiper__wrapper.js-services-swiper-container
         each item in list
             .swiper-slide.services-swiper__item
-                .services-card
+                a(href="#").services-card                    
                     .services-card__img-wrapper
                         img(srcset=item.img + " 1x," + item.img_retina + " 2x" src=item.img alt=item.title).services-card__img
+                        .services-card__img-overlay
+                        button(type="button").button.services-card__find-more-btn Find out more
                     .services-card__meta 
                         p.services-card__title  #{item.title}
                         .services-card__footer
