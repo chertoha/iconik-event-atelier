@@ -6,6 +6,7 @@ const swiper = new Swiper(".swiper", {
   watchSlidesProgress: true,
   // slidesPerView: 5,
   slidesPerView: "auto",
+
   modules: [Navigation],
 
   // Optional parameters
