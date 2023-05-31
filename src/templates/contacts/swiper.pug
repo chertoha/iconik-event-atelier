@@ -1,0 +1,63 @@
+-
+    var list = [
+        {
+            id: 1,
+            img: "./assets/images/contacts/manager-1@1x.jpg",            
+            img_retina: "./assets/images/contacts/manager-1@2x.jpg",
+            name: "Mahammed Naqvi",
+            position: "Iconik lifestyle manager"
+        },
+        {
+            id: 2,
+            img: "./assets/images/contacts/manager-2@1x.jpg",            
+            img_retina: "./assets/images/contacts/manager-2@2x.jpg",
+            name: "Aliya Mir",
+            position: "Iconik lifestyle manager"
+        },
+        {
+            id: 3,
+            img: "./assets/images/contacts/manager-3@1x.jpg",            
+            img_retina: "./assets/images/contacts/manager-3@2x.jpg",
+            name: "Unais el-Baccus",
+            position: "Iconik lifestyle manager"
+        },
+        {
+            id: 4,
+            img: "./assets/images/contacts/manager-1@1x.jpg",            
+            img_retina: "./assets/images/contacts/manager-1@2x.jpg",
+            name: "Mahammed Naqvi",
+            position: "Iconik lifestyle manager"
+        },
+        {
+            id: 5,
+            img: "./assets/images/contacts/manager-2@1x.jpg",            
+            img_retina: "./assets/images/contacts/manager-2@2x.jpg",
+            name: "Aliya Mir",
+            position: "Iconik lifestyle manager"
+        },
+        {
+            id: 6,
+            img: "./assets/images/contacts/manager-3@1x.jpg",            
+            img_retina: "./assets/images/contacts/manager-3@2x.jpg",
+            name: "Unais el-Baccus",
+            position: "Iconik lifestyle manager"
+        }
+    ];
+
+.swiper.contacts-swiper
+    .swiper-wrapper.contacts-swiper__wrapper
+        each item in list   
+            .swiper-slide.contacts-swiper__item
+                .contacts-card
+                    .contacts-card__img-wrapper
+                        img(srcset=item.img + " 1x," + item.img_retina + " 2x" src=item.img alt=item.name).contacts-card__img
+                    .contacts-card__meta
+                        h5.contacts-card__name  #{item.name}
+                        p.contacts-card__position #{item.position}
+
+    button(type="button").button.swiper-button-prev.swiper__prev
+        svg(width="36" height="36").icon
+            use(href="./assets/images/icons.svg#prev-arrow") 
+    button(type="button").button.swiper-button-next.swiper__next
+        svg(width="36" height="36").icon
+            use(href="./assets/images/icons.svg#next-arrow") 

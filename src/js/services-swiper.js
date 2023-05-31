@@ -2,22 +2,19 @@ import Swiper, { Navigation } from "swiper";
 
 // Swiper.use([Navigation, Pagination]);
 // init Swiper:
-const swiper = new Swiper(".swiper", {
+const servicesSwiper = new Swiper(".services-swiper", {
   watchSlidesProgress: true,
-  // slidesPerView: 5,
+
   slidesPerView: "auto",
 
   modules: [Navigation],
 
-  // Optional parameters
   direction: "horizontal",
-  //   loop: true,
-  //   rewind: true,
 
   // If we need pagination
-  pagination: {
-    el: ".swiper-pagination",
-  },
+  // pagination: {
+  //   el: ".swiper-pagination",
+  // },
 
   // Navigation arrows
   navigation: {

@@ -10,6 +10,10 @@
     @include mq('tablet') {
         // max-width: $tablet-viewport-width;
         max-width: none;
+
+        &--short {
+            max-width: 1170px;
+        }
     }
 
     @include mq('desktop') {
@@ -18,7 +22,11 @@
         padding-right: 20px;
 
         &--short {
-            width: 1170px;
+            max-width: 1170px;
         }
+
     }
+
+
+
 }

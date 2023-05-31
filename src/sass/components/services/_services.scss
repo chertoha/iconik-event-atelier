@@ -1,10 +1,7 @@
 .services__section-title {
     margin-bottom: 20px;
 
-
-    // @include mq('tablet') {}
-
-    @include mq('desktop') {
+    @include mq('tablet') {
         margin-bottom: 40px;
     }
 }

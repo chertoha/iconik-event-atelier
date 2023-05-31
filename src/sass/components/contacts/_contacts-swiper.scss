@@ -1,0 +1,19 @@
+.contacts-swiper {
+    width: 100%;
+}
+
+.contacts-swiper__wrapper {
+    column-gap: 10px;
+
+    @include mq('tablet') {
+        column-gap: 30px;
+    }
+}
+
+.swiper-slide.contacts-swiper__item {
+    width: 265px;
+
+    @include mq('tablet') {
+        width: 370px;
+    }
+}

@@ -1,0 +1,11 @@
+.contacts__section-title {
+    margin-bottom: 40px;
+
+    @include mq('tablet') {
+        margin-bottom: 50px;
+    }
+
+    @include mq('desktop') {
+        margin-bottom: 78px;
+    }
+}

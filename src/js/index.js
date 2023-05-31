@@ -1,3 +1,3 @@
 import "./services-nav-select";
-import "./swiper";
-import "./services-swiper-content";
+import "./services-swiper";
+import "./contacts-swiper";

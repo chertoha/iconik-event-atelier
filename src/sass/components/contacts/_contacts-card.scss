@@ -1,0 +1,44 @@
+.contacts-card {}
+
+.contacts-card__img-wrapper {
+    height: 322px;
+    margin-bottom: 16px;
+
+    @include mq('tablet') {
+        height: 450px;
+        margin-bottom: 20px;
+    }
+}
+
+.contacts-card__img {
+    display: block;
+    height: 100%;
+}
+
+.contacts-card__meta {}
+
+.contacts-card__name {
+    @extend %mobile-font-heading-5;
+    margin-bottom: 4px;
+
+    color: $primary-text-color;
+
+    @include mq('tablet') {
+        margin-bottom: 6px;
+        font-size: 20px;
+        line-height: 1.5;
+    }
+
+}
+
+.contacts-card__position {
+    font-size: 14px;
+    line-height: 1.357;
+    color: rgba(193, 203, 224, 0.25);
+
+    @include mq('tablet') {
+        font-size: 15px;
+        line-height: 1.333;
+        color: $secondary-text-color;
+    }
+}

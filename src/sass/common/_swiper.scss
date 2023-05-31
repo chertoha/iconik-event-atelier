@@ -1,7 +1,11 @@
 .swiper-button-prev.swiper__prev,
 .swiper-button-next.swiper__next {
+    @include mq('mobile-only') {
+        display: none;
+    }
+
+    --swiper-navigation-top-offset: 35%;
     --swiper-navigation-sides-offset: 0;
-    z-index: 9999;
     width: 100px;
     height: 100px;
     border-radius: 50%;
