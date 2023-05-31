@@ -1,0 +1,21 @@
+.contact-form {
+    margin-top: 44px;
+    padding: 40px 30px;
+
+    background-color: $accent-color;
+    border-radius: 2px;
+
+    @include mq('tablet') {
+        margin-top: 90px;
+    }
+
+}
+
+
+
+.contact-form__title {
+    font-family: "Al Veshion";
+    @extend %mobile-font-heading-3;
+
+
+}
