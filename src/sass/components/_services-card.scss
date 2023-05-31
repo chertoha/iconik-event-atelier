@@ -1,0 +1,38 @@
+.services-card {
+
+    // // width: 360px;
+    // @include set-items-margin(right, "10px");
+
+    // @include mq('desktop') {
+    //     margin-right: 20px;
+
+    //     &:last-child {
+    //         margin-right: 0;
+    //     }
+    // }
+}
+
+.services-card__img-wrapper {
+    // width: 100%;
+    overflow: hidden;
+}
+
+.services-card__img {
+    display: block;
+    // width: 360px;
+    height: 100%;
+}
+
+.services-card__meta {}
+
+.services-card__title {}
+
+.services-card__footer {}
+
+.services-card__price {
+
+    &--old {}
+}
+
+
+.services-card__time {}

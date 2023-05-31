@@ -2,7 +2,8 @@
     var list = [
         {
             id: 1,
-            img: "",
+            img: "./assets/images/services/service-cover-rent-ferrari@1x.jpg",            
+            img_retina: "./assets/images/services/service-cover-rent-ferrari@2x.jpg",
             title: "RENT A FERRARI F8 WITH EXCLUSIVE PRICING FROM UPTOWN LUXURY CARS",
             currentPrice: "USD 2,000.00",
             oldPrice: "USD 4,000.00",
@@ -10,7 +11,8 @@
         },
         {
             id: 2,
-            img: "",
+            img: "./assets/images/services/service-cover-brunch-with-pool@1x.jpg",
+            img_retina: "./assets/images/services/service-cover-brunch-with-pool@2x.jpg",
             title: "BRUNCH WITH POOL ACCESS AT ROOFTOP, THE BURJ CLUB",
             currentPrice: "USD 2,000.00",
             oldPrice: "USD 4,000.00",
@@ -18,7 +20,8 @@
         },
         {
             id: 3,
-            img: "",
+            img: "./assets/images/services/service-cover-live-the-billionaire-life@1x.jpg",
+            img_retina: "./assets/images/services/service-cover-live-the-billionaire-life@2x.jpg",
             title: "LIVE THE BILLIONAIRE LIFE FOR A DAY IN DUBAI",
             currentPrice: "USD 2,000.00",
             oldPrice: "USD 4,000.00",
@@ -26,7 +29,8 @@
         },
         {
             id: 4,
-            img: "",
+            img: "./assets/images/services/service-cover-friday-brunch@1x.jpg",
+            img_retina: "./assets/images/services/service-cover-friday-brunch@2x.jpg",
             title: "FRIDAY BRUNCH AT FRANGIPANI ON ZAYA NURAI ISLAND, ABU DHABI",
             currentPrice: "USD 2,000.00",
             oldPrice: "USD 4,000.00",
@@ -34,7 +38,8 @@
         },
         {
             id: 5,
-            img: "",
+            img: "./assets/images/services/service-cover-flyboard@1x.jpg",
+            img_retina: "./assets/images/services/service-cover-flyboard@2x.jpg",
             title: "Flyboard in Dubai marina",
             currentPrice: "USD 2,000.00",
             oldPrice: "USD 4,000.00",
@@ -42,7 +47,8 @@
         },
         {
             id: 6,
-            img: "",
+            img: "./assets/images/services/service-cover-rent-ferrari@1x.jpg",
+            img_retina: "./assets/images/services/service-cover-rent-ferrari@2x.jpg",
             title: "RENT A FERRARI F8 WITH EXCLUSIVE PRICING FROM UPTOWN LUXURY CARS",
             currentPrice: "USD 2,000.00",
             oldPrice: "USD 4,000.00",
@@ -50,7 +56,8 @@
         },
         {
             id: 7,
-            img: "",
+            img: "./assets/images/services/service-cover-brunch-with-pool@1x.jpg",
+            img_retina: "./assets/images/services/service-cover-brunch-with-pool@2x.jpg",
             title: "BRUNCH WITH POOL ACCESS AT ROOFTOP, THE BURJ CLUB",
             currentPrice: "USD 2,000.00",
             oldPrice: "USD 4,000.00",
@@ -58,7 +65,8 @@
         },
         {
             id: 8,
-            img: "",
+            img: "./assets/images/services/service-cover-live-the-billionaire-life@1x.jpg",
+            img_retina: "./assets/images/services/service-cover-live-the-billionaire-life@2x.jpg",
             title: "LIVE THE BILLIONAIRE LIFE FOR A DAY IN DUBAI",
             currentPrice: "USD 2,000.00",
             oldPrice: "USD 4,000.00",
@@ -66,7 +74,8 @@
         },
         {
             id: 9,
-            img: "",
+            img: "./assets/images/services/service-cover-friday-brunch@1x.jpg",
+            img_retina: "./assets/images/services/service-cover-friday-brunch@2x.jpg",
             title: "FRIDAY BRUNCH AT FRANGIPANI ON ZAYA NURAI ISLAND, ABU DHABI",
             currentPrice: "USD 2,000.00",
             oldPrice: "USD 4,000.00",
@@ -74,7 +83,8 @@
         },
         {
             id: 10,
-            img: "",
+            img: "./assets/images/services/service-cover-flyboard@1x.jpg",
+            img_retina: "./assets/images/services/service-cover-flyboard@2x.jpg",
             title: "Flyboard in Dubai marina",
             currentPrice: "USD 2,000.00",
             oldPrice: "USD 4,000.00",
@@ -83,29 +93,19 @@
     ];
 
 .swiper.services-swiper
-    .swiper-wrapper.js-services-swiper-container
+    .swiper-wrapper.services-swiper__wrapper.js-services-swiper-container
         each item in list
-            //- .swiper-slide #{item.title}
-            .swiper-slide.services-card
-                img.services-card__img
-                .services-card__meta 
-                    p.services-card__title  #{item.title}
-                    .services-card__footer
-                        span.services-card__price #{item.currentPrice}
-                        span.services-card__price--old #{item.oldPrice}
-                        span.services-card__time #{item.time}
+            .swiper-slide.services-swiper__item
+                .services-card
+                    .services-card__img-wrapper
+                        img(srcset=item.img + " 1x," + item.img_retina + " 2x" src=item.img alt=item.title).services-card__img
+                    .services-card__meta 
+                        p.services-card__title  #{item.title}
+                        .services-card__footer
+                            span.services-card__price #{item.currentPrice}
+                            span.services-card__price--old #{item.oldPrice}
+                            span.services-card__time #{item.time}
 
-
-        //- .swiper-slide Slide 1
-        //- .swiper-slide Slide 2
-        //- .swiper-slide Slide 3
-        //- .swiper-slide Slide 4
-        //- .swiper-slide Slide 5
-        //- .swiper-slide Slide 6
-        //- .swiper-slide Slide 7
-        //- .swiper-slide Slide 8
-        //- .swiper-slide Slide 9
-        //- .swiper-slide Slide 10
     .swiper-button-prev.swiper__prev
         svg(width="36" height="36").icon
             use(href="./assets/images/icons.svg#prev-arrow") 
