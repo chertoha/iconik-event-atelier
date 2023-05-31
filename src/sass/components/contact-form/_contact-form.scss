@@ -20,6 +20,16 @@
 
     @include mq('tablet') {
         margin-bottom: 36px;
+        font-size: 36px;
+        line-height: 1.333;
+    }
+}
+
+.contact-form__fields {
+    margin-bottom: 28px;
+
+    @include mq('tablet') {
+        margin-bottom: 30px;
     }
 }
 
@@ -56,19 +66,6 @@
     fill: none;
 }
 
-// .contact-form__flag-image,
-// .contact-form__select-icon {
-//     position: absolute;
-//     top: 50%;
-//     transform: translateY(-50%);
-// }
-
-// .contact-form__flag-image {
-//     position: absolute;
-//     display: block;
-
-// }
-
 .contact-form__flag-btn {
     position: absolute;
     top: 50%;
@@ -89,4 +86,23 @@
 
 .contact-form__tel {
     padding-left: 55px;
+}
+
+.contact-form__submit {
+    padding-top: 18px;
+    padding-bottom: 18px;
+    width: 100%;
+
+    font-size: 13px;
+    line-height: 1.385;
+    font-weight: 700;
+
+    border-radius: 2px;
+    background-color: $primary-background-color;
+
+    @include default-transition(background-color);
+
+    &:hover {
+        background-color: rgba(27, 27, 27, 0.6);
+    }
 }
