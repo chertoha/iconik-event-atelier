@@ -7,6 +7,7 @@
 
     @include mq('tablet') {
         margin-top: 90px;
+        padding: 90px 70px 80px;
     }
 
 }
@@ -30,14 +31,26 @@
 
     @include mq('tablet') {
         margin-bottom: 30px;
+        display: flex;
+        align-items: center;
+        // justify-content: center;
+        flex-wrap: wrap;
+        column-gap: 35px;
     }
+
+
 }
 
 .contact-form__field {
     padding-top: 28px;
     padding-bottom: 16px;
-
     border-bottom: 1px solid $secondary-background-color;
+    border-radius: 2px;
+
+    @include mq('tablet') {
+        width: 316px;
+        border-color: rgba(255, 255, 255, 0.5);
+    }
 }
 
 .contact-form__label {
@@ -50,6 +63,11 @@
     font-size: 14px;
     line-height: 1.214;
     color: $primary-text-color;
+
+    @include mq('tablet') {
+        font-size: 16px;
+        line-height: 1.188;
+    }
 }
 
 .contact-form__input::placeholder {
@@ -88,6 +106,18 @@
     padding-left: 55px;
 }
 
+.contact-form__submit-wrapper {
+
+    @include mq('tablet') {
+        display: flex;
+        align-items: center;
+        flex-wrap: wrap;
+        column-gap: 23px;
+        row-gap: 30px;
+
+    }
+}
+
 .contact-form__submit {
     padding-top: 18px;
     padding-bottom: 18px;
@@ -105,4 +135,28 @@
     &:hover {
         background-color: rgba(27, 27, 27, 0.6);
     }
+
+    @include mq('tablet') {
+        padding-top: 24px;
+        padding-bottom: 24px;
+        width: 239px;
+        font-size: 16px;
+        line-height: 1.25;
+    }
+
+
+}
+
+
+.contact-form__accepting-text {
+    display: none;
+
+    @include mq('tablet') {
+        display: block;
+        width: 414px;
+        font-size: 13px;
+        line-height: 22px;
+        color: rgba(255, 255, 255, 0.5);
+    }
+
 }

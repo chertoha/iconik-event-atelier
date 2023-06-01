@@ -1,26 +1,30 @@
 .contact-form
     h3.title.contact-form__title Get a free consultation 
-    form.contact-form__fields 
-        .contact-form__field
-            label.contact-form__label
-                input(type="text" placeholder="Fist name").field.contact-form__input
-                svg(height="14" width="14").icon.contact-form__icon
-                    use(href="./assets/images/icons.svg#user")
+    form
+        .contact-form__fields 
+            .contact-form__field
+                label.contact-form__label
+                    input(type="text" placeholder="Fist name").field.contact-form__input
+                    svg(height="14" width="14").icon.contact-form__icon
+                        use(href="./assets/images/icons.svg#user")
 
-        .contact-form__field
-            label.contact-form__label
-                button(type="button").button.contact-form__flag-btn 
-                    img(height="12" width="24" src="./assets/images/flag.png").contact-form__flag-image
-                    svg(height="6" width="9").icon.contact-form__select-icon 
-                        use(href="./assets/images/icons.svg#down-arrow")
-                input(type="tel" value="+ 971 123 4567").field.contact-form__input.contact-form__tel
-                svg(height="14" width="14").icon.contact-form__icon
-                    use(href="./assets/images/icons.svg#phone")
+            .contact-form__field
+                label.contact-form__label
+                    button(type="button").button.contact-form__flag-btn 
+                        img(height="12" width="24" src="./assets/images/flag.png").contact-form__flag-image
+                        svg(height="6" width="9").icon.contact-form__select-icon 
+                            use(href="./assets/images/icons.svg#down-arrow")
+                    input(type="tel" value="+ 971 123 4567").field.contact-form__input.contact-form__tel
+                    svg(height="14" width="14").icon.contact-form__icon
+                        use(href="./assets/images/icons.svg#phone")
 
-        .contact-form__field
-            label.contact-form__label
-                input(type="text" placeholder="Email adress").field.contact-form__input
-                svg(height="14" width="14").icon.contact-form__icon
-                    use(href="./assets/images/icons.svg#mail")
+            .contact-form__field
+                label.contact-form__label
+                    input(type="text" placeholder="Email adress").field.contact-form__input
+                    svg(height="14" width="14").icon.contact-form__icon
+                        use(href="./assets/images/icons.svg#mail")
 
-    button(type="submit").button.contact-form__submit Get a consultation
+        .contact-form__submit-wrapper 
+            button(type="submit").button.contact-form__submit Get a consultation
+            p.contact-form__accepting-text 
+                | By clicking the button you are accepting to receive an email about club membership and a phone call to arrange a show-around.
