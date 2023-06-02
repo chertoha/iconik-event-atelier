@@ -1,0 +1,49 @@
+.hero-wrapper {
+    padding-left: 0;
+    padding-right: 0;
+    border-top-left-radius: 20px;
+    border-top-right-radius: 20px;
+    background-color: tomato;
+
+    height: 680px;
+
+    background-color: $primary-background-color;
+
+    background-size: cover;
+    background-repeat: no-repeat;
+    background-position: center;
+
+    background-image: url('../assets/images/hero/hero_320@1x.jpg');
+
+    @media (min-device-pixel-ratio: 2),
+    (min-resolution: 192dpi),
+    (min-resolution: 2dppx) {
+        background-image: url('../assets/images/hero/hero_320@2x.jpg');
+    }
+
+
+    @include mq('mobile') {
+        background-image: url('../assets/images/hero/hero_480@1x.jpg');
+
+        @media (min-device-pixel-ratio: 2),
+        (min-resolution: 192dpi),
+        (min-resolution: 2dppx) {
+            background-image: url('../assets/images/hero/hero_480@2x.jpg');
+        }
+    }
+
+    @media screen and (min-width: 480px) {
+        background-image: url('../assets/images/hero/hero_1920@1x.jpg');
+
+        @media (min-device-pixel-ratio: 2),
+        (min-resolution: 192dpi),
+        (min-resolution: 2dppx) {
+            background-image: url('../assets/images/hero/hero_1920@2x.jpg');
+        }
+    }
+
+    @include mq('tablet') {
+        height: 940px;
+    }
+
+}

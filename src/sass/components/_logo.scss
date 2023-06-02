@@ -1,0 +1,13 @@
+.logo {
+    display: flex;
+    align-items: center;
+}
+
+.logo__name-icon {
+    fill: $accent-color;
+}
+
+.logo__text-icon {
+    margin-left: 4px;
+    fill: $secondary-background-color;
+}

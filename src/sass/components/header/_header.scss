@@ -1,0 +1,16 @@
+.header__container {
+    background-color: transparent;
+
+    @include mq('mobile-only') {
+        border-bottom: 1px solid rgba(255, 255, 255, 0.1);
+    }
+}
+
+.header {
+    height: 50px;
+    @extend %flex-between;
+
+    @include mq('tablet') {
+        height: 100px;
+    }
+}
