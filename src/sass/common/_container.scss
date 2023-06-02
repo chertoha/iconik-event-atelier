@@ -7,7 +7,7 @@
 
     background-color: $primary-background-color;
 
-    outline: 1px solid green;
+    // outline: 1px solid green;
 
     @include mq('tablet') {
         max-width: none;

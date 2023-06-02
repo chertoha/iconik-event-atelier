@@ -1,9 +1,8 @@
 .hero-wrapper {
     padding-left: 0;
     padding-right: 0;
-    border-top-left-radius: 20px;
-    border-top-right-radius: 20px;
-    background-color: tomato;
+    border-top-left-radius: 10px;
+    border-top-right-radius: 10px;
 
     height: 680px;
 
@@ -44,6 +43,8 @@
 
     @include mq('tablet') {
         height: 940px;
+        border-top-left-radius: 20px;
+        border-top-right-radius: 20px;
     }
 
 }

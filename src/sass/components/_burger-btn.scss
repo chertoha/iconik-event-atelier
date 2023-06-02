@@ -1,0 +1,14 @@
+.burger-btn {
+    height: 100%;
+    padding-left: 20px;
+    padding-right: 5px;
+
+    color: $primary-text-color;
+
+
+    border-left: 1px solid rgba(255, 255, 255, 0.1);
+
+    @media screen and (min-width:1200px) {
+        display: none;
+    }
+}

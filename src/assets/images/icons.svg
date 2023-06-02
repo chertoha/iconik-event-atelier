@@ -149,9 +149,9 @@
 <path fill="none" stroke-linejoin="round" stroke-linecap="round" stroke-miterlimit="10" stroke-width="3.1169" d="M14.546 10.134v6.895l5.988 4.536"></path>
 </symbol>
 <symbol id="menu-burger" viewBox="0 0 70 32">
-<path fill="#fff" style="fill: var(--color1, #fff)" d="M0 0h69.818v2.909h-69.818v-2.909z"></path>
-<path fill="#fff" style="fill: var(--color1, #fff)" d="M0 29.091h69.818v2.909h-69.818v-2.909z"></path>
-<path fill="#fff" style="fill: var(--color1, #fff)" d="M0 14.545h69.818v2.909h-69.818v-2.909z"></path>
+<path d="M0 0h69.818v2.909h-69.818v-2.909z"></path>
+<path d="M0 29.091h69.818v2.909h-69.818v-2.909z"></path>
+<path d="M0 14.545h69.818v2.909h-69.818v-2.909z"></path>
 </symbol>
 <symbol id="down-arrow" viewBox="0 0 46 32">
 <path d="M24.399 31.313l21.315-20.657v-6.764l-21.312 20.654-21.188-20.662v6.77l21.185 20.659z"></path>
