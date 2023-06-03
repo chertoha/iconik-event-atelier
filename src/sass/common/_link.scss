@@ -1,11 +1,17 @@
 .link {
+    display: block;
     @include default-transition(color);
     text-decoration: none;
     color: inherit;
 
-    &:hover,
-    &:focus,
-    &:focus-visible {
-        color: $accent-color;
+    &--hovered {
+
+        &:hover,
+        &:focus,
+        &:focus-visible {
+            color: $accent-color;
+        }
     }
+
+
 }
