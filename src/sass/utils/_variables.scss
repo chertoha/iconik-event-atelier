@@ -10,3 +10,8 @@ $secondary-text-color: #615D6D;
 $mobile-viewport-width: 320px;
 $tablet-viewport-width: 768px;
 $desktop-viewport-width: 1920px;
+
+//hero gradients
+$hero-top-gradient: linear-gradient(180deg, rgba(27, 27, 27, 0.5) 0%, rgba(27, 27, 27, 0) 18.09%);
+$hero-mobile-gradient: linear-gradient(to right, rgba(0, 0, 0, 0.4), rgba(0, 0, 0, 0.4));
+$hero-desktop-gradient: linear-gradient(to right, rgba(27, 27, 27, 0.4), rgba(27, 27, 27, 0.4));

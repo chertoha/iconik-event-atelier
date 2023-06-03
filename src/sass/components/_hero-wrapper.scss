@@ -12,32 +12,50 @@
     background-repeat: no-repeat;
     background-position: center;
 
-    background-image: url('../assets/images/hero/hero_320@1x.jpg');
+    background-image:
+        $hero-top-gradient,
+        $hero-mobile-gradient,
+        url('../assets/images/hero/hero_320@1x.jpg');
 
     @media (min-device-pixel-ratio: 2),
     (min-resolution: 192dpi),
     (min-resolution: 2dppx) {
-        background-image: url('../assets/images/hero/hero_320@2x.jpg');
+        background-image:
+            $hero-top-gradient,
+            $hero-mobile-gradient,
+            url('../assets/images/hero/hero_320@2x.jpg');
     }
 
 
     @include mq('mobile') {
-        background-image: url('../assets/images/hero/hero_480@1x.jpg');
+        background-image:
+            $hero-top-gradient,
+            $hero-mobile-gradient,
+            url('../assets/images/hero/hero_480@1x.jpg');
 
         @media (min-device-pixel-ratio: 2),
         (min-resolution: 192dpi),
         (min-resolution: 2dppx) {
-            background-image: url('../assets/images/hero/hero_480@2x.jpg');
+            background-image:
+                $hero-top-gradient,
+                $hero-mobile-gradient,
+                url('../assets/images/hero/hero_480@2x.jpg');
         }
     }
 
     @media screen and (min-width: 480px) {
-        background-image: url('../assets/images/hero/hero_1920@1x.jpg');
+        background-image:
+            $hero-top-gradient,
+            $hero-desktop-gradient,
+            url('../assets/images/hero/hero_1920@1x.jpg');
 
         @media (min-device-pixel-ratio: 2),
         (min-resolution: 192dpi),
         (min-resolution: 2dppx) {
-            background-image: url('../assets/images/hero/hero_1920@2x.jpg');
+            background-image:
+                $hero-top-gradient,
+                $hero-desktop-gradient,
+                url('../assets/images/hero/hero_1920@2x.jpg');
         }
     }
 
@@ -48,3 +66,8 @@
     }
 
 }
+
+/*
+linear-gradient(180deg, rgba(27, 27, 27, 0.5) 0%, rgba(27, 27, 27, 0) 18.09%)
+
+*/
