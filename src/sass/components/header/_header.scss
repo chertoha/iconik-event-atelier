@@ -18,11 +18,24 @@
 }
 
 .header__menu {
-    display: none;
 
-    @media screen and (min-width:1200px) {
-        display: flex;
+    display: flex;
+    height: 100%;
+    align-items: center;
+    // display: none;
+
+    @include mq('not-laptop') {
+        flex-direction: column;
+        position: fixed;
+        z-index: 999;
+        top: 0;
+        left: 0;
+        width: 100%;
         height: 100%;
-        align-items: center;
+        background-color: #555A6C;
     }
+
+
+
+
 }

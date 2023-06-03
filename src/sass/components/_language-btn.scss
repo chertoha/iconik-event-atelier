@@ -1,14 +1,22 @@
 .language-btn {
-    padding-left: 25px;
     display: flex;
     align-items: center;
 
-    height: 100%;
 
     font-size: 16px;
     line-height: 1.375;
 
-    border-left: 1px solid rgba(255, 255, 255, 0.1);
+
+    @include mq('laptop') {
+        padding-left: 25px;
+        height: 100%;
+
+        border-left: 1px solid rgba(255, 255, 255, 0.1);
+
+    }
+
+
+
 }
 
 .language-btn__icon {

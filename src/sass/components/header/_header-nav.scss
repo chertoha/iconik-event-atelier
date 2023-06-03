@@ -1,13 +1,24 @@
 .header-nav {
-    margin-right: 69px;
+
+
+    @include mq('laptop') {
+        margin-right: 69px;
+    }
 }
 
 .header-nav__list {
     @extend %flex-between;
+
+    @include mq('not-laptop') {
+        flex-direction: column;
+    }
 }
 
 .header-nav__item {
-    @include set-items-margin(right, 45px);
+
+    @include mq('laptop') {
+        @include set-items-margin(right, 45px);
+    }
 }
 
 .header-nav__link {

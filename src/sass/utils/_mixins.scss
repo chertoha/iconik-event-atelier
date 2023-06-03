@@ -13,6 +13,7 @@
 @mixin mq($type) {
     $mobile: $mobile-viewport-width;
     $tablet: $tablet-viewport-width;
+    $laptop: $laptop-viewport-width;
     $desktop: $desktop-viewport-width;
 
     @if $type =='mobile-only' {
@@ -35,6 +36,18 @@
 
     @if $type =='tablet' {
         @media screen and (min-width: $tablet) {
+            @content;
+        }
+    }
+
+    @if $type =='not-laptop' {
+        @media screen and (max-width: #{$laptop - 0.02}) {
+            @content;
+        }
+    }
+
+    @if $type =='laptop' {
+        @media screen and (min-width: $laptop) {
             @content;
         }
     }
