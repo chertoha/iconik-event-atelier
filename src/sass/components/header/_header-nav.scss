@@ -1,0 +1,18 @@
+.header-nav {
+    margin-right: 69px;
+}
+
+.header-nav__list {
+    @extend %flex-between;
+}
+
+.header-nav__item {
+    @include set-items-margin(right, 45px);
+}
+
+.header-nav__link {
+    font-size: 15px;
+    line-height: 1.467;
+    font-weight: 700;
+    text-transform: uppercase;
+}

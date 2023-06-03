@@ -3,8 +3,14 @@
         .inner-container  
             header.header 
                 include logo
-                //- include header-nav
-                //- a(href="").button.consultation-btn Get a consultation
+                .header__menu
+                    include header-nav 
+                    a(href="#request-form").link.button.consultation-btn Get a consultation
+                    button(type="button").button.language-btn 
+                        | Eng
+                        svg(width="9" height="6").icon.language-btn__icon
+                            use(href="./assets/images/icons.svg#down-arrow")
+
                 button(type="button").button.burger-btn 
                     svg(width="24" height="11").icon
                         use(href="./assets/images/icons.svg#menu-burger")
