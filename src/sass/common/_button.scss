@@ -8,22 +8,13 @@
     border-radius: 0;
     color: $primary-text-color;
 
-    // transition: background-color $default-transition-time $default-transition-function;
-
 
     // &--with-hover {
+    //     @include default-transition(background-color);
 
     //     &:hover,
     //     &:focus {
-    //         background-color: $default-button-hover-bg-color;
-    //     }
-    // }
-
-    // &--with-accent-hover {
-
-    //     &:hover,
-    //     &:focus {
-    //         background-color: #A61035;
+    //         background-color: $accent-hovered-color;
     //     }
     // }
 

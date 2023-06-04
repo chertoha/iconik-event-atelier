@@ -3,7 +3,10 @@
         .inner-container  
             header.header 
                 include logo
-                .header__menu
+                .header__menu.js-menu
+                    button(type="button").button.header__close-btn.js-close-menu
+                        svg(width="20" height="20").icon
+                            use(href="./assets/images/icons.svg#cross")
                     include header-nav 
                     a(href="#request-form").link.button.consultation-btn Get a consultation
                     button(type="button").button.language-btn 
@@ -11,6 +14,6 @@
                         svg(width="9" height="6").icon.language-btn__icon
                             use(href="./assets/images/icons.svg#down-arrow")
 
-                button(type="button").button.burger-btn 
+                button(type="button").button.burger-btn.js-open-menu
                     svg(width="24" height="11").icon
                         use(href="./assets/images/icons.svg#menu-burger")
