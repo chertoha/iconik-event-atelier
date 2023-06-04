@@ -10,7 +10,9 @@
 
 .header {
     height: 50px;
-    @extend %flex-between;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
 
     @include mq('tablet') {
         height: 100px;
@@ -25,6 +27,7 @@
     // display: none;
 
     @include mq('not-laptop') {
+        padding: 50px 20px;
         flex-direction: column;
         position: fixed;
         z-index: 999;

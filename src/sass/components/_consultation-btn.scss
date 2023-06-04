@@ -1,4 +1,5 @@
 .consultation-btn {
+    margin-bottom: 30px;
 
     display: flex;
     justify-content: center;
@@ -15,14 +16,18 @@
     background-color: $accent-color;
 
     @include mq('laptop') {
+        margin-bottom: 0;
+        margin-right: 30px;
         padding-top: 16px;
         padding-bottom: 16px;
-        margin-right: 30px;
         width: 170px;
         font-size: 13px;
-
-
     }
 
+    @include default-transition(background-color);
+
+    &:hover {
+        background-color: $accent-hovered-color;
+    }
 
 }
