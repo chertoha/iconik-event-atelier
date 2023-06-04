@@ -1,7 +1,104 @@
-.hero__container {
+// .hero-section {
+//     position: relative;
 
+//     // height: 839px;
+// }
+
+// .hero-section__audio-btn {
+//     position: absolute;
+//     right: 0;
+//     bottom: 0;
+
+
+// }
+
+.hero__container {
+    height: 100%;
     background-color: transparent;
 
 }
 
-.hero {}
+
+
+.hero {
+    padding-top: 50px;
+
+    @include mq('tablet') {
+        padding-top: 100px;
+    }
+}
+
+.hero__text {
+    font-family: 'Al Veshion';
+    font-size: 30px;
+    line-height: 1.433;
+    text-transform: uppercase;
+    color: $primary-text-color;
+
+    @include mq('tablet') {
+        width: 607px;
+        font-size: 60px;
+
+    }
+}
+
+.hero__play-wrapper {
+    margin-top: 30px;
+    display: flex;
+    align-items: center;
+
+    @include mq('tablet') {
+        margin-top: 40px;
+
+    }
+}
+
+.hero__play-btn {
+    @extend %flex-center;
+    width: 50px;
+    height: 50px;
+    color: black;
+    background-color: $secondary-background-color;
+    border-radius: 50%;
+    @include default-transition(background-color);
+
+    @include mq('tablet') {
+        width: 100px;
+        height: 100px;
+    }
+
+    &:hover {
+        background-color: $accent-color;
+    }
+
+    &:hover .icon {
+        stroke: $secondary-background-color;
+    }
+}
+
+.hero__play-icon {
+    width: 12px;
+    height: 12px;
+    stroke: #000000;
+    fill: none;
+
+    @include mq('tablet') {
+        width: 23px;
+        height: 23px;
+    }
+}
+
+.hero__play-text {
+    margin-left: 12px;
+    font-size: 16px;
+    font-weight: 600;
+    line-height: 1.375;
+
+
+    @include mq('tablet') {
+        margin-left: 23px;
+        font-size: 20px;
+        line-height: 1.5;
+
+    }
+}

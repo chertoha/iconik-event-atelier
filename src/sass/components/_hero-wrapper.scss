@@ -1,4 +1,5 @@
 .hero-wrapper {
+    position: relative;
     padding-left: 0;
     padding-right: 0;
     border-top-left-radius: 10px;
@@ -67,7 +68,34 @@
 
 }
 
-/*
-linear-gradient(180deg, rgba(27, 27, 27, 0.5) 0%, rgba(27, 27, 27, 0) 18.09%)
+.hero-wrapper__audio-btn {
+    position: relative;
+    @extend %flex-center;
 
-*/
+    width: 50px;
+    height: 50px;
+    position: absolute;
+    right: 33px;
+    bottom: 60px;
+
+    background-color: transparent;
+
+    &.audio-on::after {
+        content: '';
+        position: absolute;
+        top: 50%;
+        left: 0;
+        width: 45px;
+        height: 2px;
+        transform: translateY(-50%) rotate(45deg);
+
+        background-color: $secondary-background-color;
+
+    }
+}
+
+.hero-wrapper__audio-icon {
+    stroke: $secondary-background-color;
+    fill: none;
+
+}
