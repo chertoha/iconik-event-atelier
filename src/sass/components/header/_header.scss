@@ -27,23 +27,32 @@
     align-items: center;
 
     @include mq('not-laptop') {
-        display: none;
+        overflow-y: auto;
         padding: 50px 20px;
         flex-direction: column;
+
         position: fixed;
         z-index: 999;
         top: 0;
-        left: 0;
+        right: 0;
         width: 100%;
+        max-width: 480px;
         height: 100%;
+        transform: translateX(100%);
+        @include default-transition(transform);
+
         background-color: #555A6C;
-
-
-
     }
 
     &.is-open {
         display: flex;
+        transform: translateX(0);
+
+        @include mq('mobile-only') {
+            right: 50%;
+            transform: translateX(50%);
+        }
+
     }
 
 }
