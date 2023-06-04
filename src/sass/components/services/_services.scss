@@ -1,3 +1,11 @@
+.services {
+    padding-top: 60px;
+
+    @include mq('tablet') {
+        padding-top: 180px;
+    }
+}
+
 .services__section-title {
     margin-bottom: 20px;
 
