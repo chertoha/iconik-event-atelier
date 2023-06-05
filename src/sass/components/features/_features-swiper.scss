@@ -1,0 +1,21 @@
+.features-swiper {
+    width: 100%;
+}
+
+.features-swiper__wrapper {
+    column-gap: 0;
+
+    @include mq('tablet') {
+        column-gap: calc((100% - 218px * 5) / 4);
+    }
+}
+
+.swiper-slide.features-swiper__item {
+    width: 290px;
+
+    @include mq('tablet') {
+        // width: 218px;
+        flex-basis: 218px;
+
+    }
+}

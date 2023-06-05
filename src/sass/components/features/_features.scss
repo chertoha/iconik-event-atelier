@@ -1,0 +1,17 @@
+.features {
+    padding-top: 60px;
+    padding-bottom: 60px;
+
+    @include mq('tablet') {
+        padding-top: 180px;
+        padding-bottom: 180px;
+    }
+}
+
+.features__section-title {
+    margin-bottom: 30px;
+
+    @include mq('tablet') {
+        margin-bottom: 60px;
+    }
+}
