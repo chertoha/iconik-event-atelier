@@ -42,7 +42,7 @@
 <path stroke-linejoin="miter" stroke-linecap="butt" stroke-miterlimit="4" stroke-width="2" d="M24 16l-23 13.279v-26.558l23 13.279z"></path>
 </symbol>
 <symbol id="checkmark" viewBox="0 0 32 32">
-<path fill="#8b32fe" style="fill: var(--color2, #8b32fe)" d="M29.148 6.19c0.755 0.755 0.755 1.979 0 2.734l-16.887 16.887c-0.363 0.363-0.854 0.566-1.367 0.566s-1.004-0.204-1.367-0.566l-6.676-6.676c-0.755-0.755-0.755-1.979 0-2.734s1.979-0.755 2.734 0l5.309 5.309 15.52-15.52c0.755-0.755 1.979-0.755 2.733 0z"></path>
+<path d="M29.148 6.19c0.755 0.755 0.755 1.979 0 2.734l-16.887 16.887c-0.363 0.363-0.854 0.566-1.367 0.566s-1.004-0.204-1.367-0.566l-6.676-6.676c-0.755-0.755-0.755-1.979 0-2.734s1.979-0.755 2.734 0l5.309 5.309 15.52-15.52c0.755-0.755 1.979-0.755 2.733 0z"></path>
 </symbol>
 <symbol id="city" viewBox="0 0 32 32">
 <path stroke-linejoin="round" stroke-linecap="round" stroke-miterlimit="10" stroke-width="0.3967" d="M29.069 27.737v-14.533l-2.536-2.237"></path>

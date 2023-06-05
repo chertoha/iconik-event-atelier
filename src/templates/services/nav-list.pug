@@ -1,16 +1,28 @@
-block vars 
-    - var list = [{id:"id-1", label: "All services"},{id:"id-2", label: "DINE"},{id:"id-3", label: "RIDE"},{id:"id-4", label: "DISCOVER"},{id:"id-5", label: "RELAX"},{id:"id-6", label: "EXPERIENCE"}]
-
-.services-nav
-    button(type="button").button.services-nav__select.js-services-btn All services
-    svg(width="10" height="6").icon.services-nav__icon
-        use(href="./assets/images/icons.svg#down-arrow")    
-
-    ul.services-nav__list.js-services-list  
-        each item, index in list 
-            li.services-nav__item
-                if index===0
-                    input(type="radio" id=item.id name="services-nav" checked).services-nav__button.visually-hidden
-                else 
-                    input(type="radio" id=item.id name="services-nav").services-nav__button.visually-hidden
-                label(for=item.id).services-nav__label.js-services-label #{item.label}
+- 
+    var list = [
+        {
+            id:"id-1",
+            label: "All services"
+        },
+        {
+            id:"id-2",
+            label: "DINE"
+        },
+        {
+            id:"id-3", 
+            label: "RIDE"
+        },
+        {
+            id:"id-4", 
+            label: "DISCOVER"
+        },
+        {
+            id:"id-5", 
+            label: "RELAX"
+        },
+        {
+            id:"id-6", 
+            label: "EXPERIENCE"
+        }
+    ]
+block services-nav-list

@@ -1,36 +1,9 @@
-- 
-    var list = [
-        {
-            id:1,
-            name: "Home",
-            href: "/"
-        },
-        {
-            id:2,
-            name: "Services",
-            href: "#services"
-        },
-        {
-            id:3,
-            name: "About",
-            href: "#about"
-        },
-        {
-            id:4,
-            name: "Gallery",
-            href: "#gallery"
-        },
-        {
-            id:5,
-            name: "Contacts",
-            href: "#contacts"
-        },
-    ] 
+extends nav-list-links.pug 
 
-
-nav.header-nav     
-    ul.header-nav__list
-        each item in list   
-            li.header-nav__item
-                a(href=item.href).link.link--hovered.header-nav__link #{item.name} 
+block header-nav-list
+    nav.header-nav     
+        ul.header-nav__list
+            each item in list   
+                li.header-nav__item
+                    a(href=item.href).link.link--hovered.header-nav__link #{item.name} 
 

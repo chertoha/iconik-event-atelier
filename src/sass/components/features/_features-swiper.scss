@@ -3,7 +3,7 @@
 }
 
 .features-swiper__wrapper {
-    column-gap: 0;
+    // column-gap: 10px;
 
     @include mq('tablet') {
         column-gap: calc((100% - 218px * 5) / 4);
@@ -11,7 +11,7 @@
 }
 
 .swiper-slide.features-swiper__item {
-    width: 290px;
+    // width: 290px;
 
     @include mq('tablet') {
         flex-basis: 218px;

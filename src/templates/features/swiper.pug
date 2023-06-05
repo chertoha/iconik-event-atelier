@@ -1,52 +1,22 @@
--
-    var list = [
-        {
-            id:1,
-            iconSpriteId: "laptop",
-            title: "You leave a request online",
-            text: "Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt."
-        },
-        {
-            id:2,
-            iconSpriteId: "wireless-connect",
-            title: "Consultation with the manager",
-            text: "Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt."
-        },
-        {
-            id:3,
-            iconSpriteId: "hands",
-            title: "Presentation or discussion of conditions remotely",
-            text: "Lorem ipsum dolor sit amet, consectetur adipiscing elit."
-        },
-        {
-            id:4,
-            iconSpriteId: "sheet-pen",
-            title: "We conclude a contract",
-            text: "Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt."
-        },
-        {
-            id:5,
-            iconSpriteId: "city",
-            title: "You enjoy all the benefits of membership",
-            text: "Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt."
-        },
-    ];
+extends feature-list.pug
 
-    var count = 1;
+block features-swiper
+    -
+        var count = 1;
 
-.swiper.features-swiper
-    .swiper-wrapper.features-swiper__wrapper
-        each item in list 
-            .swiper-slide.features-swiper__item 
-                .feature-card   
-                    svg.icon.feature-card__icon
-                        use(href="./assets/images/icons.svg#" + item.iconSpriteId)
-                    h3.feature-card__title #{count++ + "."}  &nbsp; #{item.title} 
-                    p.feature-card__text #{item.text}   
+    .swiper.features-swiper
+        .swiper-wrapper.features-swiper__wrapper
+            each item in list 
+                .swiper-slide.features-swiper__item 
+                    .feature-card   
+                        svg.icon.feature-card__icon
+                            use(href="./assets/images/icons.svg#" + item.iconSpriteId)
+                        h3.feature-card__title #{count++ + "."}  &nbsp; #{item.title} 
+                        p.feature-card__text #{item.text}   
 
-    button(type="button").button.swiper-button-prev.swiper__prev
-        svg(width="18" height="18").icon
-            use(href="./assets/images/icons.svg#prev-arrow") 
-    button(type="button").button.swiper-button-next.swiper__next
-        svg(width="18" height="18").icon
-            use(href="./assets/images/icons.svg#next-arrow") 
+        button(type="button").button.swiper-button-prev.swiper__prev
+            svg(width="18" height="18").icon
+                use(href="./assets/images/icons.svg#prev-arrow") 
+        button(type="button").button.swiper-button-next.swiper__next
+            svg(width="18" height="18").icon
+                use(href="./assets/images/icons.svg#next-arrow") 

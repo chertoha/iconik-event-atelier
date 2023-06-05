@@ -1,0 +1,16 @@
+extends nav-list.pug 
+
+block services-nav-list
+    .services-nav
+        button(type="button").button.services-nav__select.js-services-btn All services
+        svg(width="10" height="6").icon.services-nav__icon
+            use(href="./assets/images/icons.svg#down-arrow")    
+
+        ul.services-nav__list.js-services-list  
+            each item, index in list 
+                li.services-nav__item
+                    if index===0
+                        input(type="radio" id=item.id name="services-nav" checked).services-nav__button.visually-hidden
+                    else 
+                        input(type="radio" id=item.id name="services-nav").services-nav__button.visually-hidden
+                    label(for=item.id).services-nav__label.js-services-label #{item.label}

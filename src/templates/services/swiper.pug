@@ -1,120 +1,29 @@
--
-    var list = [
-        {
-            id: 1,
-            img: "./assets/images/services/service-cover-rent-ferrari@1x.jpg",            
-            img_retina: "./assets/images/services/service-cover-rent-ferrari@2x.jpg",
-            title: "RENT A FERRARI F8 WITH EXCLUSIVE PRICING FROM UPTOWN LUXURY CARS",
-            currentPrice: "USD 2,000.00",
-            oldPrice: "USD 4,000.00",
-            time: "1h",
-        },
-        {
-            id: 2,
-            img: "./assets/images/services/service-cover-brunch-with-pool@1x.jpg",
-            img_retina: "./assets/images/services/service-cover-brunch-with-pool@2x.jpg",
-            title: "BRUNCH WITH POOL ACCESS AT ROOFTOP, THE BURJ CLUB",
-            currentPrice: "USD 2,000.00",
-            oldPrice: "USD 4,000.00",
-            time: "1h",
-        },
-        {
-            id: 3,
-            img: "./assets/images/services/service-cover-live-the-billionaire-life@1x.jpg",
-            img_retina: "./assets/images/services/service-cover-live-the-billionaire-life@2x.jpg",
-            title: "LIVE THE BILLIONAIRE LIFE FOR A DAY IN DUBAI",
-            currentPrice: "USD 2,000.00",
-            oldPrice: "USD 4,000.00",
-            time: "1h",
-        },
-        {
-            id: 4,
-            img: "./assets/images/services/service-cover-friday-brunch@1x.jpg",
-            img_retina: "./assets/images/services/service-cover-friday-brunch@2x.jpg",
-            title: "FRIDAY BRUNCH AT FRANGIPANI ON ZAYA NURAI ISLAND, ABU DHABI",
-            currentPrice: "USD 2,000.00",
-            oldPrice: "USD 4,000.00",
-            time: "1h",
-        },
-        {
-            id: 5,
-            img: "./assets/images/services/service-cover-flyboard@1x.jpg",
-            img_retina: "./assets/images/services/service-cover-flyboard@2x.jpg",
-            title: "Flyboard in Dubai marina",
-            currentPrice: "USD 2,000.00",
-            oldPrice: "USD 4,000.00",
-            time: "1h",
-        },
-        {
-            id: 6,
-            img: "./assets/images/services/service-cover-rent-ferrari@1x.jpg",
-            img_retina: "./assets/images/services/service-cover-rent-ferrari@2x.jpg",
-            title: "RENT A FERRARI F8 WITH EXCLUSIVE PRICING FROM UPTOWN LUXURY CARS",
-            currentPrice: "USD 2,000.00",
-            oldPrice: "USD 4,000.00",
-            time: "1h",
-        },
-        {
-            id: 7,
-            img: "./assets/images/services/service-cover-brunch-with-pool@1x.jpg",
-            img_retina: "./assets/images/services/service-cover-brunch-with-pool@2x.jpg",
-            title: "BRUNCH WITH POOL ACCESS AT ROOFTOP, THE BURJ CLUB",
-            currentPrice: "USD 2,000.00",
-            oldPrice: "USD 4,000.00",
-            time: "1h",
-        },
-        {
-            id: 8,
-            img: "./assets/images/services/service-cover-live-the-billionaire-life@1x.jpg",
-            img_retina: "./assets/images/services/service-cover-live-the-billionaire-life@2x.jpg",
-            title: "LIVE THE BILLIONAIRE LIFE FOR A DAY IN DUBAI",
-            currentPrice: "USD 2,000.00",
-            oldPrice: "USD 4,000.00",
-            time: "1h",
-        },
-        {
-            id: 9,
-            img: "./assets/images/services/service-cover-friday-brunch@1x.jpg",
-            img_retina: "./assets/images/services/service-cover-friday-brunch@2x.jpg",
-            title: "FRIDAY BRUNCH AT FRANGIPANI ON ZAYA NURAI ISLAND, ABU DHABI",
-            currentPrice: "USD 2,000.00",
-            oldPrice: "USD 4,000.00",
-            time: "1h",
-        },
-        {
-            id: 10,
-            img: "./assets/images/services/service-cover-flyboard@1x.jpg",
-            img_retina: "./assets/images/services/service-cover-flyboard@2x.jpg",
-            title: "Flyboard in Dubai marina",
-            currentPrice: "USD 2,000.00",
-            oldPrice: "USD 4,000.00",
-            time: "1h",
-        },
-    ];
+extends services-list.pug
 
-.swiper.services-swiper
-    .swiper-wrapper.services-swiper__wrapper
-        each item in list
-            .swiper-slide.services-swiper__item
-                a(href="#").link.services-card                    
-                    .services-card__img-wrapper
-                        img(srcset=item.img + " 1x," + item.img_retina + " 2x" src=item.img alt=item.title).services-card__img
-                        .services-card__img-overlay
-                        button(type="button").button.services-card__find-more-btn Find out more
-                    .services-card__meta 
-                        p.services-card__title  #{item.title}
-                        .services-card__footer
-                            span.services-card__price.services-card__price--right-offset #{item.currentPrice}
-                            span.services-card__price.services-card__price--old #{item.oldPrice}
-                            span.services-card__time 
-                                svg.icon.services-card__icon
-                                    use(href="./assets/images/icons.svg#clock") 
-                                | #{item.time}
+block services-swiper
+    .swiper.services-swiper
+        .swiper-wrapper.services-swiper__wrapper
+            each item in list
+                .swiper-slide.services-swiper__item
+                    a(href="#").link.services-card                    
+                        .services-card__img-wrapper
+                            img(srcset=item.img + " 1x," + item.img_retina + " 2x" src=item.img alt=item.title).services-card__img
+                            .services-card__img-overlay
+                            button(type="button").button.services-card__find-more-btn Find out more
+                        .services-card__meta 
+                            p.services-card__title  #{item.title}
+                            .services-card__footer
+                                span.services-card__price.services-card__price--right-offset #{item.currentPrice}
+                                span.services-card__price.services-card__price--old #{item.oldPrice}
+                                span.services-card__time 
+                                    svg.icon.services-card__icon
+                                        use(href="./assets/images/icons.svg#clock") 
+                                    | #{item.time}
 
-    button(type="button").button.swiper-button-prev.swiper__prev
-        svg(width="36" height="36").icon
-            use(href="./assets/images/icons.svg#prev-arrow") 
-    button(type="button").button.swiper-button-next.swiper__next
-        svg(width="36" height="36").icon
-            use(href="./assets/images/icons.svg#next-arrow")  
+        button(type="button").button.swiper-button-prev.swiper__prev
+            svg(width="36" height="36").icon
+                use(href="./assets/images/icons.svg#prev-arrow") 
+        button(type="button").button.swiper-button-next.swiper__next
+            svg(width="36" height="36").icon
+                use(href="./assets/images/icons.svg#next-arrow")  
 
