@@ -68,34 +68,10 @@
 
 }
 
-.hero-wrapper__audio-btn {
-    position: relative;
-    @extend %flex-center;
 
-    width: 50px;
-    height: 50px;
+
+.hero-wrapper__audio-btn {
     position: absolute;
     right: 33px;
     bottom: 60px;
-
-    background-color: transparent;
-
-    &.audio-on::after {
-        content: '';
-        position: absolute;
-        top: 50%;
-        left: 0;
-        width: 45px;
-        height: 2px;
-        transform: translateY(-50%) rotate(45deg);
-
-        background-color: $secondary-background-color;
-
-    }
-}
-
-.hero-wrapper__audio-icon {
-    stroke: $secondary-background-color;
-    fill: none;
-
 }
