@@ -14,7 +14,6 @@
     width: 290px;
 
     @include mq('tablet') {
-        // width: 218px;
         flex-basis: 218px;
 
     }
