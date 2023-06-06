@@ -1,0 +1,13 @@
+.article-list {}
+
+.article-list__item {
+    margin-bottom: 24px;
+
+    @include mq('tablet') {
+        margin-bottom: 35px;
+    }
+
+    &:last-child {
+        margin-bottom: 0;
+    }
+}

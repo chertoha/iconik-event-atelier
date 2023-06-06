@@ -4,19 +4,19 @@ block membership-list
     ul.membership__list
         each item in list
             li.membership__item
-                a.link.offer-card
-                    h3.offer-card__wrapper #{item.title}
+                a(href="").link.offer-card
+                    h3.offer-card__title #{item.title}
                     ul.article-list
 
                         each article in item.mainItems
-                            li.article-list__item.article
+                            li.article.article-list__item
                                 svg.icon.article__icon
                                     use(href="./assets/images/icons.svg#checkmark")
                                 p.article__text #{article}
 
                         each article in item.extraItems
-                            li.article-list__item.article
-                                svg.icon.article__icon
+                            li.article.article-list__item
+                                svg.icon.article__icon.article__icon--extra
                                     use(href="./assets/images/icons.svg#checkmark")
-                                p.article__text #{article}
+                                p.article__text.article__text--extra #{article}
 

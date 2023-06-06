@@ -1,0 +1,44 @@
+.article {
+    display: flex;
+    align-items: flex-start;
+    column-gap: 8px;
+
+    @include mq('tablet') {
+        column-gap: 12px;
+    }
+}
+
+.article__icon {
+    width: 10px;
+    height: 18px;
+    flex-shrink: 0;
+    fill: $accent-color;
+
+
+    @include mq('tablet') {
+        width: 12px;
+        height: 25px;
+    }
+
+    &--extra {
+        fill: rgba(97, 93, 109, 0.5);
+    }
+}
+
+.article__text {
+    font-size: 13px;
+    line-height: 1.385;
+
+    @include mq('tablet') {
+        font-size: 16px;
+        line-height: 1.5;
+    }
+
+    &--extra {
+        color: rgba(97, 93, 109, 0.5);
+    }
+
+    &--lightmode {
+        color: $primary-lightmode-text-color;
+    }
+}

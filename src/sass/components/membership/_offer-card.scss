@@ -1,0 +1,27 @@
+.offer-card {
+    padding: 30px 20px 0 20px;
+    background-color: $primary-background-color;
+
+    @include mq('tablet') {
+        padding: 158px 40px 0 40px;
+    }
+}
+
+.offer-card__title {
+    margin-bottom: 18px;
+    text-transform: uppercase;
+    font-family: 'Al Veshion';
+    font-size: 16px;
+    line-height: 1.313;
+    text-align: center;
+
+    @include mq('tablet') {
+        margin-bottom: 24px;
+        font-size: 24px;
+        line-height: 1.333;
+    }
+
+    &--lightmode {
+        color: $primary-lightmode-text-color
+    }
+}
