@@ -1,10 +1,26 @@
 .offer-card {
-    padding: 30px 20px 0 20px;
+    // padding: 30px 20px 0 20px;
+    padding-top: 30px;
     background-color: $primary-background-color;
 
     @include mq('tablet') {
-        padding: 158px 40px 0 40px;
+        // padding: 158px 40px 0 40px;
+        padding-top: 158px;
+        background-repeat: no-repeat;
+        background-image: url("../assets/images/membership/offer-card-header@1x.jpg");
+
+        @media (min-device-pixel-ratio: 2),
+        (min-resolution: 192dpi),
+        (min-resolution: 2dppx) {
+            background-image: url("../assets/images/membership/offer-card-header@1x.jpg");
+        }
     }
+
+    &--lightmode {
+        background-color: $secondary-background-color;
+    }
+
+
 }
 
 .offer-card__title {
@@ -23,5 +39,21 @@
 
     &--lightmode {
         color: $primary-lightmode-text-color
+    }
+}
+
+.offer-card__btn {
+    padding-top: 18px;
+    padding-bottom: 18px;
+
+
+    width: 100%;
+
+
+    background-color: $accent-color;
+
+    @include mq('tablet') {
+        padding-top: 21px;
+        padding-bottom: 21px;
     }
 }

@@ -4,15 +4,15 @@ block membership-list
     ul.membership__list
         each item in list
             li.membership__item
-                a(href="").link.offer-card
-                    h3.offer-card__title #{item.title}
+                a(href="" class=item.isVIP ? "offer-card--lightmode" : "").link.offer-card
+                    h3(class=item.isVIP ? "offer-card__title--lightmode" : "").offer-card__title #{item.title}
                     ul.article-list
 
                         each article in item.mainItems
                             li.article.article-list__item
                                 svg.icon.article__icon
                                     use(href="./assets/images/icons.svg#checkmark")
-                                p.article__text #{article}
+                                p(class=item.isVIP ? "article__text--lightmode" : "").article__text #{article}
 
                         each article in item.extraItems
                             li.article.article-list__item
@@ -20,3 +20,4 @@ block membership-list
                                     use(href="./assets/images/icons.svg#checkmark")
                                 p.article__text.article__text--extra #{article}
 
+                    button(type="button").button.offer-card__btn Get a consultation
