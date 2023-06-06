@@ -1,10 +1,8 @@
 .offer-card {
-    // padding: 30px 20px 0 20px;
     padding-top: 30px;
     background-color: $primary-background-color;
 
     @include mq('tablet') {
-        // padding: 158px 40px 0 40px;
         padding-top: 158px;
         background-repeat: no-repeat;
         background-image: url("../assets/images/membership/offer-card-header@1x.jpg");
@@ -15,6 +13,7 @@
             background-image: url("../assets/images/membership/offer-card-header@1x.jpg");
         }
     }
+
 
     &--lightmode {
         background-color: $secondary-background-color;
@@ -76,7 +75,17 @@
     @include mq('tablet') {
         display: none;
     }
+
+    &--lightmode {
+        color: rgba(97, 93, 109, 0.5);
+        border-color: rgba(97, 93, 109, 0.1);
+
+        &:hover {
+            background-color: rgba(0, 0, 0, 0.1);
+        }
+    }
 }
+
 
 .offer-card__cta-btn {
     padding-top: 18px;

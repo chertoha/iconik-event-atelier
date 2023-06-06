@@ -21,7 +21,7 @@ block membership-list
                                         use(href="./assets/images/icons.svg#checkmark")
                                     p.article__text.article__text--extra #{article}
 
-                    button(type="button").button.offer-card__view-all-btn.js-offer-view-all-btn
+                    button(type="button" class=item.isVIP ? "offer-card__view-all-btn--lightmode" : "").button.offer-card__view-all-btn.js-offer-view-all-btn
                         svg(width="16" height="16").icon
                             use(href="./assets/images/icons.svg#add-icon")
                         | VIEW ALL FEATURES
