@@ -8,15 +8,13 @@
     border-radius: 0;
     color: $primary-text-color;
 
+    &--accent {
+        background-color: $accent-color;
 
-    // &--with-hover {
-    //     @include default-transition(background-color);
-
-    //     &:hover,
-    //     &:focus {
-    //         background-color: $accent-hovered-color;
-    //     }
-    // }
+        &:hover {
+            background-color: $accent-hovered-color;
+        }
+    }
 
 
 }

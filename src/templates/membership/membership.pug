@@ -1,23 +1,28 @@
 extends offer-list.pug 
 
 block membership-list
-    ul.membership__list
+    ul.membership__list.js-offer-card-list
         each item in list
             li.membership__item
-                a(href="" class=item.isVIP ? "offer-card--lightmode" : "").link.offer-card
+                a(href="" class=item.isVIP ? "offer-card--lightmode" : "").link.offer-card.js-offer-card
                     h3(class=item.isVIP ? "offer-card__title--lightmode" : "").offer-card__title #{item.title}
-                    ul.article-list
+                    .offer-card__articles-wrapper   
+                        ul.article-list
+                            each article in item.mainItems
+                                li.article.article-list__item
+                                    svg.icon.article__icon
+                                        use(href="./assets/images/icons.svg#checkmark")
+                                    p(class=item.isVIP ? "article__text--lightmode" : "").article__text #{article}
 
-                        each article in item.mainItems
-                            li.article.article-list__item
-                                svg.icon.article__icon
-                                    use(href="./assets/images/icons.svg#checkmark")
-                                p(class=item.isVIP ? "article__text--lightmode" : "").article__text #{article}
+                        ul.article-list.js-hidden-article-list
+                            each article in item.extraItems
+                                li.article.article-list__item
+                                    svg.icon.article__icon.article__icon--extra
+                                        use(href="./assets/images/icons.svg#checkmark")
+                                    p.article__text.article__text--extra #{article}
 
-                        each article in item.extraItems
-                            li.article.article-list__item
-                                svg.icon.article__icon.article__icon--extra
-                                    use(href="./assets/images/icons.svg#checkmark")
-                                p.article__text.article__text--extra #{article}
-
-                    button(type="button").button.offer-card__btn Get a consultation
+                    button(type="button").button.offer-card__view-all-btn.js-offer-view-all-btn
+                        svg(width="16" height="16").icon
+                            use(href="./assets/images/icons.svg#add-icon")
+                        | VIEW ALL FEATURES
+                    button(type="button").button.button--accent.offer-card__cta-btn Get a consultation

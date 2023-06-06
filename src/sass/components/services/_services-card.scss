@@ -120,6 +120,8 @@
 }
 
 .services-card__time {
+    display: flex;
+    align-items: center;
     margin-left: auto;
     @extend %mobile-font-main-text-2;
     color: $secondary-text-color;

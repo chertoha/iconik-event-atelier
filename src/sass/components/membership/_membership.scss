@@ -36,7 +36,7 @@
     margin-left: auto;
     margin-right: auto;
 
-    outline: 1px solid tomato;
+    // outline: 1px solid tomato;
 
     max-width: 290px;
 
@@ -46,8 +46,17 @@
         margin-right: 0;
 
         margin-bottom: 0;
-        flex-basis: 374px;
+        // flex-basis: 374px;
+        flex-basis: calc((100% - 20px) / 2);
     }
+
+    @include mq('laptop') {
+        // max-width: none;
+        flex-basis: 374px;
+        // max-width: 455px;
+        // width: 455px;
+    }
+
 
     @include mq('desktop') {
         // max-width: none;
