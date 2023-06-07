@@ -1,0 +1,21 @@
+extends event-list.pug 
+
+block events-swiper 
+    .swiper.events-swiper
+        .swiper-wrapper.events-swiper__wrapper
+            each item in list
+                .swiper-slide.events-swiper__item
+                    a(href="").link.event-card
+                        img(src=item.img alt=item.title).event-card__img
+                        h3.event-card__title #{item.title}
+                        button(type="button").button.play-btn.event-card__play-btn 
+                            svg.icon.event-card__play-icon
+                                use(href="./assets/images/icons.svg#play")
+
+
+        button(type="button").button.swiper-button-prev.swiper__prev
+            svg(width="36" height="36").icon
+                use(href="./assets/images/icons.svg#prev-arrow") 
+        button(type="button").button.swiper-button-next.swiper__next
+            svg(width="36" height="36").icon
+                use(href="./assets/images/icons.svg#next-arrow")  

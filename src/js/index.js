@@ -5,3 +5,4 @@ import "./services-swiper";
 import "./features-swiper";
 import "./membership";
 import "./contacts-swiper";
+import "./events-swiper";

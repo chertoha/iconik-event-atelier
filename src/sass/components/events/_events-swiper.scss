@@ -1,0 +1,19 @@
+.events-swiper {
+    width: 100%;
+}
+
+.events-swiper__wrapper {
+    column-gap: 10px;
+
+    @include mq('tablet') {
+        column-gap: 20px;
+    }
+}
+
+.swiper-slide.events-swiper__item {
+    width: 265px;
+
+    @include mq('tablet') {
+        width: 613px;
+    }
+}

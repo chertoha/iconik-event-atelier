@@ -1,0 +1,17 @@
+.events {
+    padding-top: 60px;
+    padding-bottom: 60px;
+
+    @include mq('tablet') {
+        padding-top: 180px;
+        padding-bottom: 180px;
+    }
+}
+
+.events__title {
+    margin-bottom: 24px;
+
+    @include mq('tablet') {
+        margin-bottom: 43px;
+    }
+}
