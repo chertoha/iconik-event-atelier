@@ -4,5 +4,6 @@ import "./services-nav-select";
 import "./services-swiper";
 import "./features-swiper";
 import "./membership";
+import "./event-card-text-trim";
 import "./contacts-swiper";
 import "./events-swiper";
