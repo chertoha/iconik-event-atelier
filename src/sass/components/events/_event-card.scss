@@ -59,6 +59,7 @@
 }
 
 .event-card__play-btn {
+    // display: flex;
     position: absolute;
     left: 50%;
     top: 50%;
@@ -68,13 +69,14 @@
     border: 1px solid $secondary-background-color;
 
     @include default-transition(transform);
-
     transform-origin: center;
+    // transform-origin: top left;
+
 
     &:hover {
         // background-color: $accent-color;
         // color: $accent-color;
-        transform: scale(3)
+        transform: scale(1.1);
     }
 }
 
