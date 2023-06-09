@@ -43,10 +43,10 @@
         height: 60px;
 
     }
+
 }
 
 .event-card__title {
-
     font-weight: 600;
     font-size: 16px;
     line-height: 1.375;
@@ -55,8 +55,27 @@
     @include mq('tablet') {
         font-size: 20px;
         line-height: 1.5;
+
+
     }
+
+    // &>span.non-visible {
+    //     display: none;
+    // }
+
 }
+
+.event-card__title>span.non-visible {
+    display: none;
+
+    @include mq('tablet') {
+        display: block;
+
+
+    }
+
+}
+
 
 .event-card__play-btn {
     position: absolute;
