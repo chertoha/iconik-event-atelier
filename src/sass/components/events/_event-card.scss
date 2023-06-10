@@ -58,30 +58,45 @@
     }
 
 
-    &::after {
-        display: inline;
-        content: '...';
-        // @include mq('mobile-only') {
-        //     display: inline;
-        //     content: '...';
-
-        // }
-    }
-}
-
-
-
-.event-card__title>span.non-visible {
-    display: none;
-
-
-    // @include mq('tablet') {
+    // &::after {
     //     display: inline;
+    //     content: '...';
+    //     // @include mq('mobile-only') {
+    //     //     display: inline;
+    //     //     content: '...';
+
+    //     // }
     // }
 
 
-
 }
+
+
+.event-card__title>span.trimmed {
+    display: inline;
+
+    @include mq('tablet') {
+        display: none;
+    }
+}
+
+.event-card__title>span.non-trimmed {
+    display: none;
+
+    @include mq('tablet') {
+        display: inline;
+    }
+}
+
+// .event-card__title>span.non-visible {
+//     display: none;
+//     // @include mq('tablet') {
+//     //     display: inline;
+//     // }
+
+
+
+// }
 
 
 .event-card__play-btn {
