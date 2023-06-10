@@ -55,24 +55,31 @@
     @include mq('tablet') {
         font-size: 20px;
         line-height: 1.5;
-
-
     }
 
-    // &>span.non-visible {
-    //     display: none;
-    // }
 
+    &::after {
+        display: inline;
+        content: '...';
+        // @include mq('mobile-only') {
+        //     display: inline;
+        //     content: '...';
+
+        // }
+    }
 }
+
+
 
 .event-card__title>span.non-visible {
     display: none;
 
-    @include mq('tablet') {
-        display: block;
+
+    // @include mq('tablet') {
+    //     display: inline;
+    // }
 
 
-    }
 
 }
 
