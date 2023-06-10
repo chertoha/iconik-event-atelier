@@ -15,3 +15,31 @@
         margin-bottom: 43px;
     }
 }
+
+.events__cta {
+
+    padding-top: 18px;
+    padding-bottom: 18px;
+    margin-top: 34px;
+    margin-left: auto;
+    margin-right: auto;
+    width: 160px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+
+    font-weight: 700;
+    font-size: 13px;
+    line-height: 1.385;
+
+    background-color: $accent-color;
+
+    @include mq('tablet') {
+        margin-top: 69px;
+        padding-top: 24px;
+        padding-bottom: 24px;
+        width: 200px;
+        font-size: 16px;
+        line-height: 1.375;
+    }
+}
