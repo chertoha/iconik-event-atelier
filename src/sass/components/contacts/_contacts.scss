@@ -1,3 +1,11 @@
+.contacts {
+    padding-bottom: 60px;
+
+    @include mq('tablet') {
+        padding-bottom: 180px;
+    }
+}
+
 .contacts__section-title {
     margin-bottom: 40px;
 
