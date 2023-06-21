@@ -58,22 +58,32 @@
 //     row-gap: 20px;
 // }
 
-.gallery__grid {
-    width: 100%;
-}
+// .gallery__grid {
+//     width: 100%;
+// }
 
 
 
-.grid-sizer,
-.gallery__item {
-    width: 334px;
+// .grid-sizer,
+// .gallery__item {
 
-    &--short {
-        width: 334px;
-    }
+//     // width: 334px;
+//     width: 28%;
 
-    &--long {
-        width: 575px;
-    }
+//     &--short {
+//         // width: 334px;
+//         width: 17%;
+//     }
 
-}
+//     &--long {
+//         // width: 575px;
+//         width: 28%;
+//     }
+
+// }
+
+// .gallery__img {
+//     display: block;
+//     width: 100%;
+//     height: auto;
+// }
