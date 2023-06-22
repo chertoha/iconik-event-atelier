@@ -1,5 +1,30 @@
-.social-ref {}
+.social-ref {
+    margin-left: 10px;
 
-.social-ref__title {}
+    font-size: 11px;
 
-.social-ref__text {}
+    line-height: 1.45;
+
+    @include mq('tablet') {
+        margin-left: 16px;
+
+        font-size: 16px;
+        line-height: 1.625;
+    }
+}
+
+.social-ref__title {
+    font-weight: 600;
+
+    @include mq('tablet') {}
+}
+
+.social-ref__text {
+    color: rgba(193, 203, 224, 0.25);
+
+    @include mq('tablet') {
+        color: rgba(255, 255, 255, 0.25);
+        font-size: 14px;
+        line-height: 1.857;
+    }
+}

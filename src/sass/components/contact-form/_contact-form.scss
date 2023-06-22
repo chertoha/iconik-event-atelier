@@ -60,6 +60,7 @@
 }
 
 .contact-form__input {
+    font-family: Inter, sans-serif;
     font-size: 14px;
     line-height: 1.214;
     color: $primary-text-color;
@@ -123,6 +124,7 @@
     padding-bottom: 18px;
     width: 100%;
 
+    font-family: Inter, sans-serif;
     font-size: 13px;
     line-height: 1.385;
     font-weight: 700;
@@ -150,10 +152,13 @@
 
 .contact-form__accepting-text {
     display: none;
+    font-family: Inter, sans-serif;
 
     @include mq('tablet') {
         display: block;
         width: 414px;
+
+
         font-size: 13px;
         line-height: 22px;
         color: rgba(255, 255, 255, 0.5);

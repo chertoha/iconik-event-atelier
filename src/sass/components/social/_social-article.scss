@@ -1,11 +1,112 @@
-.social-article {}
+.social-article {
+    padding: 18px;
 
-.social-article__head {}
+    @include mq('tablet') {
+        padding: 28px;
+    }
+}
 
-.social-article__icon-wrapper {}
+.social-article__head {
+    display: flex;
+    align-items: center;
+}
+
+.social-article__icon-wrapper {
+    @extend %flex-center;
+    width: 30px;
+    height: 30px;
+
+    background-color: $accent-color;
+    border-radius: 50%;
+    color: #000000;
+
+    @include mq('tablet') {
+        width: 50px;
+        height: 50px;
+    }
+}
+
+.social-article__info-icon {
+    width: 4px;
+    height: 18px;
+
+    @include mq('tablet') {
+        width: 7px;
+        height: 30px;
+    }
+}
 
 .social-article__ref {}
 
-.social-article__btn {}
+.social-article__btn {
+    margin-left: auto;
+    width: 30px;
+    height: 30px;
+
+
+
+    font-size: 12px;
+    font-family: Inter, sans-serif;
+    font-weight: 700;
+    line-height: 1.03;
+
+    border-radius: 2px;
+    background-color: $primary-background-color;
+
+    @include default-transition(background-color);
+
+    @include mq('mobile-only') {
+        display: flex;
+        align-items: center;
+        justify-content: center;
+    }
+
+    @include mq('tablet') {
+        padding: 15px 30px;
+        width: auto;
+        height: auto;
+
+        font-size: 13px;
+        font-weight: 600;
+        line-height: 1.538;
+    }
+
+    &:hover {
+        background-color: $accent-color;
+    }
+
+}
+
+.social-article__btn::after {
+    @include mq('mobile-only') {
+        content: '+';
+    }
+}
+
+.social-article__btn-text {
+    display: none;
+
+    @include mq('tablet') {
+        display: inline;
+    }
+}
 
 .social-article__gallery {}
+
+.social-article__item {}
+
+.social-article__img {}
+
+.social-article__refresh-btn {
+    font-family: Inter, sans-serif;
+}
+
+.social-article__refresh-icon {
+    width: 10px;
+    height: 10px;
+
+    @include mq('tablet') {
+        width: 32px;
+        height: 32px;
+    }
+}

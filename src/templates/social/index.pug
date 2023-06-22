@@ -14,30 +14,36 @@ section
                         li.social__item
                             a.social__link.link.button 
                                 | INSTAGRAM
-                                svg(width="" height="").icon.social__link-icon
+                                svg.icon.social__link-icon
                                     use(href="./assets/images/icons.svg#angle-arrow")
                         li.social__item
                             a.social__link.link.button 
                                 | FACEBOOK
-                                svg(width="" height="").icon.social__link-icon
+                                svg.icon.social__link-icon
                                     use(href="./assets/images/icons.svg#angle-arrow")
                         li.social__item
                             a.social__link.link.button 
                                 | LINKEDIN        
-                                svg(width="" height="").icon.social__link-icon
+                                svg.icon.social__link-icon
                                     use(href="./assets/images/icons.svg#angle-arrow")
                 .social__info.social-article
                     .social-article__head 
                         .social-article__icon-wrapper
-                            svg(width="7" height="30").icon
+                            svg.icon.social-article__info-icon
                                 use(href="./assets/images/icons.svg#info")
                         .social-article__ref.social-ref
                             p.social-ref__title @iconik_event_atelier
                             p.social-ref__text Description here
-                        button.button.social-article__btn Follow
-                    .social-article__gallery 
-                    button(type="button").button
-                        svg(width="" height="" ).icon
+                        button.button.social-article__btn 
+                            span.social-article__btn-text Follow
+
+                    .social-article__gallery
+                        .social-article__item   
+                            img(src="./assets/images/social/social-1-mob@1x.jpg").social-article__img
+
+
+                    button(type="button").button.social-article__refresh-btn
+                        svg.icon.social-article__refresh-icon
                             use(href="./assets/images/icons.svg#refresh-arrows")
                         | Load more    
 

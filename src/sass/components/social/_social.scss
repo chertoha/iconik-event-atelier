@@ -1,8 +1,16 @@
 .social {
+
     @include mq('tablet') {
+        width: 768px;
+        margin-left: auto;
+        margin-right: auto;
+    }
+
+    @include mq('laptop') {
+        width: auto;
         display: flex;
         align-items: center;
-
+        column-gap: 115px;
     }
 }
 
@@ -39,10 +47,18 @@
     display: flex;
     align-items: center;
     column-gap: 10px;
+
+    @include mq('tablet') {
+        column-gap: 30px;
+    }
 }
 
 .social__item {
     flex-basis: calc((100% - 20px) / 3);
+
+    @include mq('tablet') {
+        flex-basis: calc((100% - 60px) / 3);
+    }
 }
 
 .social__link {
@@ -100,9 +116,14 @@
 .social__info {
     margin-top: 40px;
     width: 290px;
+    margin-left: auto;
+    margin-right: auto;
+    flex-shrink: 0;
 
+    background-color: $footer-background-color;
 
     @include mq('tablet') {
         margin-top: 0;
+        width: 470px;
     }
 }
