@@ -1,25 +1,38 @@
 .social {
+    padding-bottom: 50px;
 
     @include mq('tablet') {
-        width: 768px;
+        max-width: 768px;
         margin-left: auto;
         margin-right: auto;
     }
 
     @include mq('laptop') {
-        width: auto;
+        max-width: fit-content;
         display: flex;
-        align-items: center;
+        // align-items: center;
         column-gap: 115px;
     }
 }
 
-.social__meta {}
+.social__meta {
+
+
+    @include mq('laptop') {
+        display: flex;
+        flex-direction: column;
+        justify-content: space-between;
+    }
+}
 
 .social__heading {
     margin-bottom: 30px;
 
     @include mq('tablet') {
+        margin-bottom: 60px;
+    }
+
+    @include mq('laptop') {
         margin-bottom: 0;
     }
 }
@@ -122,8 +135,18 @@
 
     background-color: $footer-background-color;
 
+
+
     @include mq('tablet') {
-        margin-top: 0;
+        margin-top: 60px;
         width: 470px;
+    }
+
+    @include mq('laptop') {
+        margin-top: 0;
+    }
+
+    @include mq('desktop') {
+        // margin-top: 0;
     }
 }

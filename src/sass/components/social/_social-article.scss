@@ -92,12 +92,14 @@
 }
 
 .social-article__gallery {
+    margin-top: 28px;
     display: flex;
     flex-wrap: wrap;
     column-gap: 3px;
     row-gap: 3px;
 
     @include mq('tablet') {
+        margin-top: 45px;
         column-gap: 5px;
         row-gap: 5px;
     }
@@ -110,7 +112,6 @@
 
     flex-basis: calc((100% - 6px) / 3);
 
-    // background-color: green;
     background-color: $footer-background-color;
 
     @include mq('tablet') {
@@ -125,15 +126,38 @@
 }
 
 .social-article__refresh-btn {
+    margin-left: auto;
+    margin-right: auto;
+    margin-top: 20px;
+    display: flex;
+    align-items: center;
+
     font-family: Inter, sans-serif;
+    font-size: 11px;
+    font-weight: 700;
+    line-height: 1.121;
+
+    @include default-transition(color);
+
+    @include mq('tablet') {
+        margin-top: 30px;
+        font-size: 13px;
+        line-height: 1.538;
+    }
+
+    &:hover {
+        color: $accent-color;
+    }
 }
 
 .social-article__refresh-icon {
     width: 10px;
     height: 10px;
+    margin-right: 11px;
 
     @include mq('tablet') {
-        width: 32px;
-        height: 32px;
+        margin-right: 18px;
+        width: 16px;
+        height: 16px;
     }
 }
