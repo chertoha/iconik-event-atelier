@@ -3,16 +3,29 @@ section
         .inner-container
             .social
                 .social__meta
-                    h2.section-title.social__section-title We are on social media
-                    p.social__text 
-                        | Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut.
+                    .social__heading
+                        h2.section-title.social__section-title 
+                            |  We are on 
+                            br
+                            | social media
+                        p.social__text 
+                            | Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut.
                     ul.social__list
                         li.social__item
-                            a.social__link.link.button INSTAGRAM
+                            a.social__link.link.button 
+                                | INSTAGRAM
+                                svg(width="" height="").icon.social__link-icon
+                                    use(href="./assets/images/icons.svg#angle-arrow")
                         li.social__item
-                            a.social__link.link.button FACEBOOK
+                            a.social__link.link.button 
+                                | FACEBOOK
+                                svg(width="" height="").icon.social__link-icon
+                                    use(href="./assets/images/icons.svg#angle-arrow")
                         li.social__item
-                            a.social__link.link.button LENKEDIN        
+                            a.social__link.link.button 
+                                | LINKEDIN        
+                                svg(width="" height="").icon.social__link-icon
+                                    use(href="./assets/images/icons.svg#angle-arrow")
                 .social__info.social-article
                     .social-article__head 
                         .social-article__icon-wrapper

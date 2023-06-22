@@ -1,5 +1,6 @@
 .link {
     display: block;
+    @include default-transition(border-color);
     @include default-transition(color);
     text-decoration: none;
     color: inherit;
@@ -10,6 +11,7 @@
         &:focus,
         &:focus-visible {
             color: $accent-color;
+            border-color: $accent-color;
         }
     }
 

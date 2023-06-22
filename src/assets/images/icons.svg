@@ -17,8 +17,8 @@
 <path d="M0.299 3.956c0-2.173 1.63-3.85 4.096-3.849s4.092 1.566 4.091 3.736c0 2.287-1.63 3.964-4.095 3.963s-4.093-1.677-4.092-3.85z"></path>
 </symbol>
 <symbol id="angle-arrow" viewBox="0 0 32 32">
-<path fill="none" stroke="#fff" style="stroke: var(--color1, #fff)" stroke-linejoin="miter" stroke-linecap="square" stroke-miterlimit="4" stroke-width="2.8235" d="M6.259 1.575h23.388v21.83"></path>
-<path fill="none" stroke="#fff" style="stroke: var(--color1, #fff)" stroke-linejoin="round" stroke-linecap="square" stroke-miterlimit="4" stroke-width="2.8235" d="M28.89 2.42l-25.979 25.816"></path>
+<path stroke-linejoin="miter" stroke-linecap="square" stroke-miterlimit="4" stroke-width="2.8235" d="M6.259 1.575h23.388v21.83"></path>
+<path stroke-linejoin="round" stroke-linecap="square" stroke-miterlimit="4" stroke-width="2.8235" d="M28.89 2.42l-25.979 25.816"></path>
 </symbol>
 <symbol id="refresh-arrows" viewBox="0 0 32 32">
 <path fill="#fff" style="fill: var(--color1, #fff)" d="M30.706 15.217c0-8.317-6.742-15.059-15.059-15.059v3.765c6.238 0 11.294 5.056 11.294 11.294 0 3.119-1.264 5.942-3.308 7.986l-0.457 0.457v-4.678h-3.765v11.294h11.294v-3.765h-5.057l0.646-0.646c2.725-2.725 4.411-6.49 4.411-10.648z"></path>
