@@ -7,7 +7,7 @@ block contacts-swiper
                 .swiper-slide.contacts-swiper__item
                     .contacts-card
                         .contacts-card__img-wrapper
-                            img(srcset=item.img + " 1x," + item.img_retina + " 2x" src=item.img alt=item.name).contacts-card__img
+                            img(srcset= "./assets/images/contacts/" + item.img + " 1x," + "./assets/images/contacts/" + item.img_retina + " 2x" src= "./assets/images/contacts/" + item.img alt=item.name).contacts-card__img
                         .contacts-card__meta
                             h5.contacts-card__name  #{item.name}
                             p.contacts-card__position #{item.position}

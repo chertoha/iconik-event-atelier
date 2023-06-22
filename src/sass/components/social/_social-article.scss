@@ -91,11 +91,38 @@
     }
 }
 
-.social-article__gallery {}
+.social-article__gallery {
+    display: flex;
+    flex-wrap: wrap;
+    column-gap: 3px;
+    row-gap: 3px;
 
-.social-article__item {}
+    @include mq('tablet') {
+        column-gap: 5px;
+        row-gap: 5px;
+    }
 
-.social-article__img {}
+}
+
+.social-article__item {
+    height: 82px;
+    overflow: hidden;
+
+    flex-basis: calc((100% - 6px) / 3);
+
+    // background-color: green;
+    background-color: $footer-background-color;
+
+    @include mq('tablet') {
+        height: 133px;
+        flex-basis: calc((100% - 10px) / 3);
+    }
+}
+
+.social-article__img {
+    display: block;
+    object-fit: cover;
+}
 
 .social-article__refresh-btn {
     font-family: Inter, sans-serif;

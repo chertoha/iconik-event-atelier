@@ -6,7 +6,7 @@ block events-swiper
             each item in list
                 .swiper-slide.events-swiper__item
                     a(href="").link.event-card
-                        img(srcset=item.img + " 1x," + item.img_retina + " 2x" src=item.img alt=item.title).event-card__img
+                        img(srcset= "./assets/images/events/" + item.img + " 1x," + "./assets/images/events/" + item.img_retina + " 2x" src= "./assets/images/events/" + item.img alt=item.title).event-card__img
                         .event-card__title-wrapper
                             h3.event-card__title.js-trim-text #{item.title}
                         button(type="button").button.play-btn.event-card__play-btn 
