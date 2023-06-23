@@ -1,11 +1,14 @@
-extends image-list.pug 
+extends ../data/social-image-list.pug 
 
 block social-image-list
+    -
+        var imageBasePath = "./assets/images/social/";
+
     .social-article__gallery 
         each item in imageList
             .social-article__item 
                 picture.social-article__img
-                    source(srcset= "./assets/images/social/" + item.mob_1x + " 1x," + "./assets/images/social/" + item.mob_2x + " 2x" media="(max-width: 767.98px)" type="image/jpeg")
-                    source(srcset= "./assets/images/social/" +  item.tab_1x + " 1x," + "./assets/images/social/" + item.tab_2x + " 2x" media="(min-width: 768px)" type="image/jpeg")
-                    img(src= "./assets/images/social/" + item.tab_1x alt=item.alt)
+                    source(srcset= imageBasePath + item.mob_1x + " 1x," + imageBasePath + item.mob_2x + " 2x" media="(max-width: 767.98px)" type="image/jpeg")
+                    source(srcset= imageBasePath +  item.tab_1x + " 1x," + imageBasePath + item.tab_2x + " 2x" media="(min-width: 768px)" type="image/jpeg")
+                    img(src= imageBasePath + item.tab_1x alt=item.alt)
 

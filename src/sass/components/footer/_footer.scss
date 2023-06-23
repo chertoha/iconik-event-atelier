@@ -1,0 +1,14 @@
+.footer {
+    background-color: $footer-background-color;
+}
+
+.footer__container {
+    @include mq('tablet') {
+        padding-right: 0;
+        padding-left: 0;
+    }
+}
+
+.footer__meta {}
+
+.footer__map {}
