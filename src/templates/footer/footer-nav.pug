@@ -1,0 +1,9 @@
+extends ../data/nav-list-links
+
+block nav-list
+    nav.footer-nav     
+        ul.footer-nav__list
+            each item in list   
+                li.footer-nav__item
+                    a(href=item.href).link.link--hovered.footer-nav__link #{item.name} 
+

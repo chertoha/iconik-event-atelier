@@ -88,6 +88,9 @@
 
 
 .offer-card__cta-btn {
+    display: flex;
+    align-items: center;
+    justify-content: center;
     padding-top: 18px;
     padding-bottom: 18px;
     width: 100%;
