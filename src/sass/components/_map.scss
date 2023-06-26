@@ -1,0 +1,41 @@
+.map-marker {
+    position: relative;
+    cursor: pointer;
+    width: 30px;
+    height: 30px;
+
+    border-radius: 50%;
+    background-image: url('../assets/images/info.svg');
+    background-size: 4px 18px;
+    background-repeat: no-repeat;
+    background-position: center;
+    background-color: $accent-color;
+
+
+    @include mq('tablet') {
+
+        width: 60px;
+        height: 60px;
+        background-size: 8px 36px;
+    }
+
+    &::after {
+        content: '';
+        position: absolute;
+        bottom: 0;
+        left: 50%;
+        transform: translate(-50%, 95%);
+
+        border-top: 7px solid $accent-color;
+        border-left: 3px solid transparent;
+        border-right: 3px solid transparent;
+
+
+        @include mq('tablet') {
+            border-top: 13px solid $accent-color;
+            border-left: 6px solid transparent;
+            border-right: 6px solid transparent;
+        }
+
+    }
+}

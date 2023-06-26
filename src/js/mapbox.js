@@ -9,27 +9,10 @@ mapboxgl.accessToken = process.env.MAPBOX_ACCESS_TOKEN;
 
 const map = new mapboxgl.Map({
   container: "js-footer-map", // container ID
-  style: "mapbox://styles/mapbox/streets-v12", // style URL
-  //   center: [-74.5, 40], // starting position [lng, lat]
-  center: [55.155366468681926, 25.095146491634175], // starting position [lng, lat]
-  zoom: 14, // starting zoom
+  style: "mapbox://styles/chertoha/cljcorzmr005n01o40t8e3je8", // style URL
+  center: [55.1458, 25.083], // starting position [lng, lat]
+  zoom: 12, // starting zoom
 });
-
-// const marker1 = new mapboxgl.Marker()
-//   .setLngLat([55.154057794998, 25.087113364199414])
-//   .addTo(map);
-
-// const marker2 = new mapboxgl.Marker()
-//   .setLngLat([55.15987547924298, 25.095008326403175])
-//   .addTo(map);
-
-// const marker3 = new mapboxgl.Marker()
-//   .setLngLat([55.13723024060895, 25.082660778242523])
-//   .addTo(map);
-
-// const marker4 = new mapboxgl.Marker()
-//   .setLngLat([55.145386343664, 25.0746078936669])
-//   .addTo(map);
 
 const geojson = {
   type: "FeatureCollection",
@@ -38,11 +21,11 @@ const geojson = {
       type: "Feature",
       geometry: {
         type: "Point",
-        coordinates: [55.154057794998, 25.087113364199414],
+        coordinates: [55.146, 25.08999],
       },
       properties: {
         title: "Mapbox",
-        description: "Dubai ",
+        description: "Dubai",
       },
     },
     {
@@ -53,7 +36,7 @@ const geojson = {
       },
       properties: {
         title: "Mapbox",
-        description: "San Francisco, California",
+        description: "Dubai",
       },
     },
     {
@@ -64,7 +47,7 @@ const geojson = {
       },
       properties: {
         title: "Mapbox",
-        description: "San Francisco, California",
+        description: "Dubai",
       },
     },
     {
@@ -75,7 +58,7 @@ const geojson = {
       },
       properties: {
         title: "Mapbox",
-        description: "San Francisco, California",
+        description: "Dubai",
       },
     },
   ],
@@ -84,8 +67,14 @@ const geojson = {
 for (const feature of geojson.features) {
   // create a HTML element for each feature
   const el = document.createElement("div");
-  el.className = "marker";
+  el.className = "map-marker";
+  // el.innerHTML = `<svg class="icon"><use href="./assets/images/icons.svg#info" /></svg>`;
+  // el.innerHTML = `i`;
+  // console.log(el.innerHTML);
 
   // make a marker for each feature and add to the map
   new mapboxgl.Marker(el).setLngLat(feature.geometry.coordinates).addTo(map);
 }
+
+// svg.icon.social - article__info - icon;
+// use((href = "./assets/images/icons.svg#info"));
