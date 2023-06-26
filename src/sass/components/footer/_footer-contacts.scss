@@ -1,0 +1,50 @@
+.footer-contacts {
+    font-style: normal;
+}
+
+.footer-contacts__label {
+    margin-bottom: 8px;
+
+    font-size: 12px;
+    font-weight: 700;
+    line-height: 1.333;
+    color: rgba(193, 203, 224, 0.50);
+
+    @include mq('tablet') {
+        color: rgba(97, 93, 109, 0.50);
+        font-size: 15px;
+        line-height: 1.467;
+    }
+}
+
+.footer-contacts__value {
+    margin-bottom: 12px;
+
+    font-size: 13px;
+    font-weight: 600;
+    line-height: 1.385;
+
+    @include mq('tablet') {
+        margin-bottom: 24px;
+        font-size: 16px;
+        line-height: 1.5;
+    }
+}
+
+.footer-contacts__cta {
+    padding: 18px 36px;
+    text-align: center;
+
+    font-size: 13px;
+    font-family: Inter, sans-serif;
+    font-weight: 700;
+    line-height: 1.385;
+
+
+    @include mq('tablet') {
+        padding: 16px 50px;
+    }
+
+
+
+}

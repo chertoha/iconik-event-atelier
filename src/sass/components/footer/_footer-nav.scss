@@ -1,7 +1,26 @@
-.footer-nav {}
+.footer-nav {
+    font-size: 15px;
+    font-weight: 600;
+    line-height: 1.333;
+
+    @include mq('tablet') {
+        font-size: 18px;
+
+    }
+}
 
 .footer-nav__list {}
 
-.footer-nav__item {}
+.footer-nav__item {
+    @include set-items-margin(bottom, 25px);
+
+    @include mq('tablet') {
+        margin-bottom: 30px;
+
+        &:last-child {
+            margin-bottom: 0;
+        }
+    }
+}
 
 .footer-nav__link {}

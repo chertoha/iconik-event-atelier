@@ -81,57 +81,6 @@
     }
 }
 
-.social__link {
-    position: relative;
-    display: flex;
-    align-items: center;
-    justify-content: center;
-
-    padding-top: 14px;
-    padding-bottom: 14px;
-
-    text-transform: uppercase;
-    font-size: 11px;
-    font-weight: 700;
-
-    border: 1px solid $secondary-background-color;
-    border-radius: 2px;
-
-    @include mq('tablet') {
-        padding-top: 29px;
-        padding-bottom: 29px;
-        font-size: 15px;
-        line-height: 1.47;
-    }
-
-    &:hover {
-        color: $accent-color;
-        border-color: $accent-color;
-    }
-
-    &:hover .social__link-icon {
-        stroke: $accent-color;
-    }
-
-}
-
-.social__link-icon {
-    position: absolute;
-    width: 8px;
-    height: 8px;
-    right: 4px;
-    top: 4px;
-
-    fill: none;
-    stroke: $secondary-background-color;
-
-    @include mq('tablet') {
-        width: 16px;
-        height: 16px;
-        right: 8px;
-        top: 8px;
-    }
-}
 
 .social__info {
     margin-top: 40px;
