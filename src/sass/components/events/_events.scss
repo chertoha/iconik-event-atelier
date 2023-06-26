@@ -3,6 +3,11 @@
     padding-bottom: 60px;
 
     @include mq('tablet') {
+        padding-top: 100px;
+        padding-bottom: 100px;
+    }
+
+    @include mq('desktop') {
         padding-top: 180px;
         padding-bottom: 180px;
     }

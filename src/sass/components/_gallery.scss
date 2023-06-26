@@ -10,6 +10,10 @@
     padding-top: 60px;
 
     @include mq('tablet') {
+        padding-top: 100px;
+    }
+
+    @include mq('desktop') {
         padding-top: 180px;
     }
 }
@@ -25,14 +29,20 @@
 .gallery__grid {
     position: relative;
     display: flex;
-    // column-gap: 10px;
+    column-gap: 10px;
     justify-content: center;
 
     height: 782px;
     overflow: hidden;
 
-    @include mq('desktop') {
+    @include mq('tablet') {
         height: 1405px;
+    }
+
+    @include mq('desktop') {
+        display: block;
+        // height: 1405px;
+        // column-gap: 0;
     }
 }
 
@@ -40,39 +50,73 @@
     // display: inline-flex;
     display: flex;
     row-gap: 10px;
+    column-gap: 10px;
+    width: 155px;
 
     flex-direction: column;
     // flex-wrap: wrap;
     // height: 1390px;
     // height: 782px;
-    align-content: space-between;
+    // align-content: space-between;
+    align-content: center;
 
+    @include mq('tablet') {
+        width: auto;
+        flex-wrap: wrap;
+        // align-content: center;
+        column-gap: 20px;
+        row-gap: 20px;
+        // width: 27px;
+    }
 
     @include mq('desktop') {
-        row-gap: 20px;
-        // height: 1405px;
-        flex-wrap: wrap;
+        align-content: space-between;
+        column-gap: 20px;
     }
 
 }
 
 .gallery__col--outside {
 
-    @include mq('desktop') {}
+    @include mq('tablet') {
+        // display: none;
+    }
+
+    @include mq('laptop') {
+        display: none;
+    }
+
+    @include mq('desktop') {
+        display: flex;
+    }
 }
 
 .gallery__col--inside {
-    align-content: center;
-    column-gap: 10px;
+    // align-content: center;
+    // column-gap: 10px;
 
 
+    @include mq('tablet') {
+        display: none;
+    }
 
+    @include mq('laptop') {
+        display: flex;
+    }
 
     @include mq('desktop') {
-        column-gap: 20px;
+        // column-gap: 20px;
+        // display: inline-flex;
         position: absolute;
         top: 0;
         left: 50%;
         transform: translateX(-50%);
     }
+}
+
+.gallery__img {
+    display: block;
+    width: 100%;
+    height: auto;
+    object-fit: cover;
 }
