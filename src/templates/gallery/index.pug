@@ -1,64 +1,114 @@
-section 
-    .container.gallery__container
-        .gallery 
-            h2.section-title.gallery__title iconik lifestyle
-            .gallery__grid
+extends ../data/gallery-image-list.pug
+
+block gallery-image-list
+    - 
+        var imageBasePath = "./assets/images/gallery/";
+
+    section 
+        .container.gallery__container
+            .gallery 
+                h2.section-title.gallery__title iconik lifestyle
+                .gallery__grid
+                    .gallery__col.gallery__col--outside 
+                        each item in outsideList 
+                            .gallery__item 
+                                picture.social-article__img
+                                    source(srcset= imageBasePath + item.mob_1x + " 1x," + imageBasePath + item.mob_2x + " 2x" media="(max-width: 767.98px)" type="image/jpeg")
+                                    source(srcset= imageBasePath +  item.desktop_1x + " 1x," + imageBasePath + item.desktop_2x + " 2x" media="(min-width: 768px)" type="image/jpeg")
+                                    img(src= imageBasePath + item.mob_1x alt=item.alt).gallery__img
+
+                    .gallery__col.gallery__col--inside 
+                        each item in insideList 
+                            .gallery__item 
+                                picture.social-article__img
+                                    source(srcset= imageBasePath + item.mob_1x + " 1x," + imageBasePath + item.mob_2x + " 2x" media="(max-width: 767.98px)" type="image/jpeg")
+                                    source(srcset= imageBasePath +  item.desktop_1x + " 1x," + imageBasePath + item.desktop_2x + " 2x" media="(min-width: 768px)" type="image/jpeg")
+                                    img(src= imageBasePath + item.mob_1x alt=item.alt).gallery__img
+
+                    //-     .gallery__item 
+                    //-         picture.social-article__img
+                    //-             source(srcset= imageBasePath + "gallery-1-mobile@1x.jpg" + " 1x," + imageBasePath + "gallery-1-mobile@2x.jpg" + " 2x" media="(max-width: 767.98px)" type="image/jpeg")
+                    //-             source(srcset= imageBasePath +  "gallery-1-desktop@1x.jpg" + " 1x," + imageBasePath + "gallery-1-desktop@2x.jpg" + " 2x" media="(min-width: 768px)" type="image/jpeg")
+                    //-             img(src= imageBasePath + "gallery-1-desktop@1x.jpg" alt="").gallery__img
+                    //-     .gallery__item  
+
+                    //-         //- img(src= imageBasePath + "gallery-5-desktop@1x.jpg" alt="").gallery__img
+                    //-     .gallery__item  
+                    //-         //- img(src= imageBasePath + "gallery-9-desktop@1x.jpg" alt="").gallery__img
+                    //-     .gallery__item  
+                    //-         //- img(src= imageBasePath + "gallery-4-desktop@1x.jpg" alt="").gallery__img
+                    //-     .gallery__item  
+                    //-         //- img(src= imageBasePath + "gallery-8-desktop@1x.jpg" alt="").gallery__img
+                    //-     .gallery__item  
+                    //-         //- img(src= imageBasePath + "gallery-11-desktop@1x.jpg" alt="").gallery__img
+
+                    //- .gallery__col.gallery__col--inside 
+                    //-     .gallery__item  
+                    //-         //- img(src= imageBasePath + "gallery-2-desktop@1x.jpg" alt="").gallery__img
+                    //-     .gallery__item  
+                    //-         //- img(src= imageBasePath + "gallery-6-desktop@1x.jpg" alt="").gallery__img
+                    //-     .gallery__item  
+                    //-         //- img(src=imageBasePath +"gallery-10-desktop@1x.jpg" alt="").gallery__img
+                    //-     .gallery__item  
+                    //-         //- img(src= imageBasePath + "gallery-3-desktop@1x.jpg" alt="").gallery__img
+                    //-     .gallery__item  
+                    //-         //- img(src= imageBasePath + "gallery-7-desktop@1x.jpg" alt="").gallery__img
 
 
 
-            //- .gallery__grid.js-gallery-grid
-            //- .grid-sizer
-            //- .grid-item.gallery__item.gallery__item--short
-            //-     img(src="./assets/images/gallery/gallery-1-desktop@1x.jpg").gallery__img
-            //- .grid-item.gallery__item.gallery__item--long
-            //-     img(src="./assets/images/gallery/gallery-2-desktop@1x.jpg").gallery__img
-            //- .grid-item.gallery__item.gallery__item--long
-            //-     img(src="./assets/images/gallery/gallery-3-desktop@1x.jpg").gallery__img
-            //- .grid-item.gallery__item.gallery__item--short
-            //-     img(src="./assets/images/gallery/gallery-4-desktop@1x.jpg").gallery__img
+                //- .gallery__grid.js-gallery-grid
+                //- .grid-sizer
+                //- .grid-item.gallery__item.gallery__item--short
+                //-     img(src="./assets/images/gallery/gallery-1-desktop@1x.jpg").gallery__img
+                //- .grid-item.gallery__item.gallery__item--long
+                //-     img(src="./assets/images/gallery/gallery-2-desktop@1x.jpg").gallery__img
+                //- .grid-item.gallery__item.gallery__item--long
+                //-     img(src="./assets/images/gallery/gallery-3-desktop@1x.jpg").gallery__img
+                //- .grid-item.gallery__item.gallery__item--short
+                //-     img(src="./assets/images/gallery/gallery-4-desktop@1x.jpg").gallery__img
 
-            //- .gallery__item.gallery__item--short
-            //-     img(src="./assets/images/gallery/gallery-5-desktop@1x.jpg").gallery__img
-            //- .gallery__item.gallery__item--long
-            //-     img(src="./assets/images/gallery/gallery-6-desktop@1x.jpg").gallery__img
-            //- .gallery__item.gallery__item--long
-            //-     img(src="./assets/images/gallery/gallery-7-desktop@1x.jpg").gallery__img
-            //- .gallery__item.gallery__item--short
-            //-     img(src="./assets/images/gallery/gallery-8-desktop@1x.jpg").gallery__img
-            //- .gallery__item.gallery__item--short
-            //-     img(src="./assets/images/gallery/gallery-9-desktop@1x.jpg").gallery__img
-            //- .gallery__item.gallery__item--long
-            //-     img(src="./assets/images/gallery/gallery-10-desktop@1x.jpg").gallery__img
-            //- .gallery__item.gallery__item--short
-            //-     img(src="./assets/images/gallery/gallery-11-desktop@1x.jpg").gallery__img
+                //- .gallery__item.gallery__item--short
+                //-     img(src="./assets/images/gallery/gallery-5-desktop@1x.jpg").gallery__img
+                //- .gallery__item.gallery__item--long
+                //-     img(src="./assets/images/gallery/gallery-6-desktop@1x.jpg").gallery__img
+                //- .gallery__item.gallery__item--long
+                //-     img(src="./assets/images/gallery/gallery-7-desktop@1x.jpg").gallery__img
+                //- .gallery__item.gallery__item--short
+                //-     img(src="./assets/images/gallery/gallery-8-desktop@1x.jpg").gallery__img
+                //- .gallery__item.gallery__item--short
+                //-     img(src="./assets/images/gallery/gallery-9-desktop@1x.jpg").gallery__img
+                //- .gallery__item.gallery__item--long
+                //-     img(src="./assets/images/gallery/gallery-10-desktop@1x.jpg").gallery__img
+                //- .gallery__item.gallery__item--short
+                //-     img(src="./assets/images/gallery/gallery-11-desktop@1x.jpg").gallery__img
 
 
-            //- .gallery__col
-            //-     .gallery__item
-            //-         img(src="./assets/images/gallery/gallery-1-desktop@1x.jpg")
-            //-     .gallery__item
-            //-         img(src="./assets/images/gallery/gallery-5-desktop@1x.jpg")
-            //-     .gallery__item
-            //-         img(src="./assets/images/gallery/gallery-9-desktop@1x.jpg")
+                //- .gallery__col
+                //-     .gallery__item
+                //-         img(src="./assets/images/gallery/gallery-1-desktop@1x.jpg")
+                //-     .gallery__item
+                //-         img(src="./assets/images/gallery/gallery-5-desktop@1x.jpg")
+                //-     .gallery__item
+                //-         img(src="./assets/images/gallery/gallery-9-desktop@1x.jpg")
 
-            //- .gallery__col
-            //-     .gallery__item
-            //-         img(src="./assets/images/gallery/gallery-2-desktop@1x.jpg")
-            //-     .gallery__item
-            //-         img(src="./assets/images/gallery/gallery-6-desktop@1x.jpg")
-            //-     .gallery__item
-            //-         img(src="./assets/images/gallery/gallery-10-desktop@1x.jpg")
+                //- .gallery__col
+                //-     .gallery__item
+                //-         img(src="./assets/images/gallery/gallery-2-desktop@1x.jpg")
+                //-     .gallery__item
+                //-         img(src="./assets/images/gallery/gallery-6-desktop@1x.jpg")
+                //-     .gallery__item
+                //-         img(src="./assets/images/gallery/gallery-10-desktop@1x.jpg")
 
-            //- .gallery__col     
-            //-     .gallery__item
-            //-         img(src="./assets/images/gallery/gallery-3-desktop@1x.jpg")
-            //-     .gallery__item
-            //-         img(src="./assets/images/gallery/gallery-7-desktop@1x.jpg")
+                //- .gallery__col     
+                //-     .gallery__item
+                //-         img(src="./assets/images/gallery/gallery-3-desktop@1x.jpg")
+                //-     .gallery__item
+                //-         img(src="./assets/images/gallery/gallery-7-desktop@1x.jpg")
 
-            //- .gallery__col 
-            //-     .gallery__item
-            //-         img(src="./assets/images/gallery/gallery-4-desktop@1x.jpg")
-            //-     .gallery__item
-            //-         img(src="./assets/images/gallery/gallery-8-desktop@1x.jpg")
-            //-     .gallery__item
-            //-         img(src="./assets/images/gallery/gallery-11-desktop@1x.jpg")
+                //- .gallery__col 
+                //-     .gallery__item
+                //-         img(src="./assets/images/gallery/gallery-4-desktop@1x.jpg")
+                //-     .gallery__item
+                //-         img(src="./assets/images/gallery/gallery-8-desktop@1x.jpg")
+                //-     .gallery__item
+                //-         img(src="./assets/images/gallery/gallery-11-desktop@1x.jpg")
