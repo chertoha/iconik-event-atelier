@@ -70,11 +70,20 @@
     }
 
     @include mq('desktop') {
+        height: 100%;
         align-content: space-between;
         column-gap: 20px;
     }
 
 }
+
+// .gallery__col {
+//     display: flex;
+//     flex-direction: column;
+//     flex-wrap: wrap;
+//     height: 1405px;
+//     align-content: space-between;
+// }
 
 .gallery__col--outside {
 
@@ -107,6 +116,7 @@
     @include mq('desktop') {
         // column-gap: 20px;
         // display: inline-flex;
+        align-content: center;
         position: absolute;
         top: 0;
         left: 50%;
