@@ -19,6 +19,14 @@
     }
 }
 
+.contacts-swiper__prev,
+.contacts-swiper__next {
+    --swiper-navigation-top-offset: 37%;
+    --swiper-navigation-sides-offset: -4%;
+}
+
+// .contacts-swiper__next {}
+
 
 
 // .contacts-swiper__prev,

@@ -4,19 +4,20 @@ block features-swiper
     -
         var count = 1;
 
-    .swiper.features-swiper
-        .swiper-wrapper.features-swiper__wrapper
-            each item in list 
-                .swiper-slide.features-swiper__item 
-                    .feature-card   
-                        svg.icon.feature-card__icon
-                            use(href="./assets/images/icons.svg#" + item.iconSpriteId)
-                        h3.feature-card__title #{count++ + "."}  &nbsp; #{item.title} 
-                        p.feature-card__text #{item.text}   
+    .features__swiper-wrapper
+        .swiper.features-swiper
+            .swiper-wrapper.features-swiper__wrapper
+                each item in list 
+                    .swiper-slide.features-swiper__item 
+                        .feature-card   
+                            svg.icon.feature-card__icon
+                                use(href="./assets/images/icons.svg#" + item.iconSpriteId)
+                            h3.feature-card__title #{count++ + "."}  &nbsp; #{item.title} 
+                            p.feature-card__text #{item.text}   
 
-        button(type="button").button.swiper-button-prev.swiper__prev
-            svg(width="18" height="18").icon
+        button(type="button").button.swiper-button-prev.swiper__prev.features-swiper__prev
+            svg.icon
                 use(href="./assets/images/icons.svg#prev-arrow") 
-        button(type="button").button.swiper-button-next.swiper__next
-            svg(width="18" height="18").icon
+        button(type="button").button.swiper-button-next.swiper__next.features-swiper__next
+            svg.icon
                 use(href="./assets/images/icons.svg#next-arrow") 

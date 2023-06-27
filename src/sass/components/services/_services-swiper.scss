@@ -17,3 +17,9 @@
         width: 360px;
     }
 }
+
+.services-swiper__prev,
+.services-swiper__next {
+    --swiper-navigation-top-offset: 35%;
+    --swiper-navigation-sides-offset: -20px;
+}

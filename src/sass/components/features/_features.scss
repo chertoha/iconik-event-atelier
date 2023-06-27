@@ -1,6 +1,7 @@
 .features {
     padding-top: 60px;
-    padding-bottom: 60px;
+    // padding-bottom: 60px;
+    padding-bottom: 125px;
 
     @include mq('tablet') {
         padding-top: 180px;
@@ -14,4 +15,9 @@
     @include mq('tablet') {
         margin-bottom: 60px;
     }
+}
+
+.features__swiper-wrapper {
+    position: relative;
+    width: 100%;
 }
