@@ -129,4 +129,10 @@
     width: 100%;
     height: auto;
     object-fit: cover;
+
+    @include default-transition(transform);
+
+    &:hover {
+        transform: scale(1.01);
+    }
 }
