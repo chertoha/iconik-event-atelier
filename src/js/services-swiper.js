@@ -18,7 +18,7 @@ const servicesSwiper = new Swiper(".services-swiper", {
 
   // Navigation arrows
   navigation: {
-    nextEl: ".swiper-button-next",
-    prevEl: ".swiper-button-prev",
+    nextEl: ".swiper-button-next.js-services-next",
+    prevEl: ".swiper-button-prev.js-services-prev",
   },
 });

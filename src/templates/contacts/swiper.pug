@@ -13,16 +13,9 @@ block contacts-swiper
                                 h5.contacts-card__name  #{item.name}
                                 p.contacts-card__position #{item.position}
 
-        //- button(type="button").button.contacts-swiper__prev
-        //-     svg(width="36" height="36").icon
-        //-         use(href="./assets/images/icons.svg#prev-arrow") 
-        //- button(type="button").button.contacts-swiper__next
-        //-     svg(width="36" height="36").icon
-        //-         use(href="./assets/images/icons.svg#next-arrow") 
-
-        button(type="button").button.swiper-button-prev.swiper__prev.contacts-swiper__prev
+        button(type="button").button.swiper-button-prev.swiper__prev.contacts-swiper__prev.js-contacts-prev
             svg(width="36" height="36").icon
                 use(href="./assets/images/icons.svg#prev-arrow") 
-        button(type="button").button.swiper-button-next.swiper__next.contacts-swiper__next
+        button(type="button").button.swiper-button-next.swiper__next.contacts-swiper__next.js-contacts-next
             svg(width="36" height="36").icon
                 use(href="./assets/images/icons.svg#next-arrow") 

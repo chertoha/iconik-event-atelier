@@ -15,9 +15,12 @@ block features-swiper
                             h3.feature-card__title #{count++ + "."}  &nbsp; #{item.title} 
                             p.feature-card__text #{item.text}   
 
-        button(type="button").button.swiper-button-prev.swiper__prev.features-swiper__prev
+
+        .swiper-pagination
+
+        button(type="button").button.swiper-button-prev.swiper__prev.features-swiper__prev.features__prev
             svg.icon
                 use(href="./assets/images/icons.svg#prev-arrow") 
-        button(type="button").button.swiper-button-next.swiper__next.features-swiper__next
+        button(type="button").button.swiper-button-next.swiper__next.features-swiper__next.features__next
             svg.icon
                 use(href="./assets/images/icons.svg#next-arrow") 

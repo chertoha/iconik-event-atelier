@@ -10,7 +10,7 @@ const contactsSwiper = new Swiper(".contacts-swiper", {
   direction: "horizontal",
 
   navigation: {
-    nextEl: ".swiper-button-next",
-    prevEl: ".swiper-button-prev",
+    nextEl: ".swiper-button-next.js-contacts-next",
+    prevEl: ".swiper-button-prev.js-contacts-prev",
   },
 });
