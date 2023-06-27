@@ -1,0 +1,44 @@
+.select {
+    position: relative;
+    cursor: pointer;
+}
+
+.select__btn {
+    width: 100%;
+    background-color: transparent;
+
+    @include default-transition(fill);
+    @include default-transition(border-color);
+}
+
+.select__list {
+    display: none;
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    z-index: 999;
+
+    &.is-open {
+        display: block;
+    }
+}
+
+.select__item {}
+
+.select__label {
+    cursor: pointer;
+    display: block;
+    @include default-transition(border-color);
+    @include default-transition(background-color);
+    @include default-transition(color);
+
+    &:hover {
+        background-color: $footer-background-color;
+    }
+}
+
+.select__input:checked~.select__label {
+    color: $primary-text-color;
+    background-color: $footer-background-color;
+}
