@@ -1,16 +1,24 @@
 extends ../data/contact-list.pug
 
 block contacts-swiper
-    .swiper.contacts-swiper
-        .swiper-wrapper.contacts-swiper__wrapper
-            each item in list   
-                .swiper-slide.contacts-swiper__item
-                    .contacts-card
-                        .contacts-card__img-wrapper
-                            img(srcset= "./assets/images/contacts/" + item.img + " 1x," + "./assets/images/contacts/" + item.img_retina + " 2x" src= "./assets/images/contacts/" + item.img alt=item.name).contacts-card__img
-                        .contacts-card__meta
-                            h5.contacts-card__name  #{item.name}
-                            p.contacts-card__position #{item.position}
+    .contacts__swiper-wrapper
+        .swiper.contacts-swiper
+            .swiper-wrapper.contacts-swiper__wrapper
+                each item in list   
+                    .swiper-slide.contacts-swiper__item
+                        .contacts-card
+                            .contacts-card__img-wrapper
+                                img(srcset= "./assets/images/contacts/" + item.img + " 1x," + "./assets/images/contacts/" + item.img_retina + " 2x" src= "./assets/images/contacts/" + item.img alt=item.name).contacts-card__img
+                            .contacts-card__meta
+                                h5.contacts-card__name  #{item.name}
+                                p.contacts-card__position #{item.position}
+
+        //- button(type="button").button.contacts-swiper__prev
+        //-     svg(width="36" height="36").icon
+        //-         use(href="./assets/images/icons.svg#prev-arrow") 
+        //- button(type="button").button.contacts-swiper__next
+        //-     svg(width="36" height="36").icon
+        //-         use(href="./assets/images/icons.svg#next-arrow") 
 
         button(type="button").button.swiper-button-prev.swiper__prev
             svg(width="36" height="36").icon
