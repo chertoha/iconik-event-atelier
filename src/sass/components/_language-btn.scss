@@ -1,12 +1,6 @@
-.language-btn {
+.lang-select {
     display: flex;
     align-items: center;
-    padding-right: 17px;
-
-
-    font-size: 16px;
-    line-height: 1.375;
-
 
     @include mq('laptop') {
         padding-left: 25px;
@@ -15,11 +9,17 @@
         border-left: 1px solid rgba(255, 255, 255, 0.1);
     }
 
-
-
 }
 
-.language-btn__icon {
+.lang-select__btn {
+    height: 100%;
+    padding-right: 17px;
+
+    font-size: 16px;
+    line-height: 1.375;
+}
+
+.lang-btn__icon {
     margin-left: 8px;
 
     position: absolute;
@@ -28,4 +28,24 @@
     fill: rgba(255, 255, 255, 0.5);
 }
 
-.language-btn__list {}
+.lang-btn__list {
+    width: auto;
+    top: 110%;
+    right: 0;
+
+    background-color: $primary-background-color;
+    border: 1px solid rgba(255, 255, 255, 0.6);
+
+    @include mq('laptop') {
+        top: 65%;
+        right: 0;
+    }
+}
+
+.lang-btn__label {
+    padding: 15px;
+
+    font-size: 16px;
+    line-height: 1.375;
+
+}

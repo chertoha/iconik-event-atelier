@@ -1,4 +1,5 @@
 import "./trim-offset-height";
+import "./lang-select";
 import "./mobile-menu";
 import "./audio-volume";
 import "./services-nav-select";

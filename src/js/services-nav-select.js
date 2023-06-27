@@ -1,13 +1,9 @@
-const btnRef = document.querySelector(".js-services-btn");
-const listRef = document.querySelector(".js-services-list");
+import { Select } from "./classes/Select";
 
-btnRef.addEventListener("click", () => {
-  listRef.classList.add("is-open");
-});
+const servicesNavSelect = new Select(
+  "js-services-btn",
+  "js-services-list",
+  "js-services-label"
+);
 
-listRef.addEventListener("click", (e) => {
-  if (e.target.classList.contains("js-services-label")) {
-    btnRef.innerText = e.target.innerText;
-    listRef.classList.remove("is-open");
-  }
-});
+servicesNavSelect.init();

@@ -1,20 +1,16 @@
 extends ../data/lang-list.pug
-//- button(type="button").button.language-btn 
-//-     | Eng
-//-     svg(width="9" height="6").icon.language-btn__icon
-//-         use(href="./assets/images/icons.svg#down-arrow")
 
 block lang-list
-    .select.language-btn.js-lang-btn
-        button(type="button").button.select__btn Eng
-        svg(width="9" height="9").icon.language-btn__icon
+    .select.lang-select
+        button(type="button").button.select__btn.lang-select__btn#js-lang-btn Eng
+        svg(width="9" height="9").icon.lang-btn__icon
             use(href="./assets/images/icons.svg#down-arrow")    
 
-        ul.select__list.language-btn__list.js-lang-list  
+        ul.select__list.lang-btn__list#js-lang-list  
             each item, index in langList 
                 li.select__item
                     if index===0
                         input(type="radio" id="lang-"+item.id name="lang-list" checked).select__button.visually-hidden
                     else 
                         input(type="radio" id="lang-"+item.id name="lang-list").select__button.visually-hidden
-                    label(for=item.id).select__label.js-lang-label #{item.label}
+                    label(for=item.id).select__label.lang-btn__label.js-lang-label #{item.label}
