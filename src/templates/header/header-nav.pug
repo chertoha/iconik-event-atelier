@@ -2,8 +2,8 @@ extends ../data/nav-list-links.pug
 
 block nav-list
     nav.header-nav     
-        ul.header-nav__list
+        ul.header-nav__list#js-header-nav-list
             each item in list   
                 li.header-nav__item
-                    a(href=item.href).link.link--hovered.header-nav__link #{item.name} 
+                    a(href=item.href).link.link--hovered.header-nav__link.js-header-nav-link #{item.name} 
 
