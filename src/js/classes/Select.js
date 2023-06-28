@@ -15,12 +15,10 @@ export class Select {
 
     btn.addEventListener("click", () => {
       list.classList.add("is-open");
-      console.log(list);
     });
 
     list.addEventListener("click", (e) => {
       if (e.target.classList.contains(labelClass)) {
-        console.log(labelClass);
         btn.innerText = e.target.innerText;
         list.classList.remove("is-open");
       }
