@@ -2,6 +2,7 @@ const mobileMenu = document.querySelector(".js-menu");
 const openBtn = document.querySelector(".js-open-menu");
 const closeBtn = document.querySelector(".js-close-menu");
 const headerNavList = document.querySelector("#js-header-nav-list");
+const ctaBtn = document.querySelector("#js-cta-button");
 
 openBtn.addEventListener("click", () => {
   mobileMenu.classList.add("is-open");
@@ -32,4 +33,11 @@ headerNavList.addEventListener("click", (e) => {
   }
 });
 
+ctaBtn.addEventListener("click", () => {
+  mobileMenu.classList.remove("is-open");
+  openBtn.setAttribute("aria-expanded", false);
+  document.body.classList.remove("no-scroll");
+});
+
 //.js-header-nav-link
+//js-cta-button
