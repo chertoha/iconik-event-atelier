@@ -25,7 +25,6 @@ openBtn.addEventListener("click", () => {
   document.body.classList.add("no-scroll");
 
   window.addEventListener("keydown", closeMenuWithEsc);
-
   window.addEventListener("click", closeMenuByClickOutside);
 });
 
