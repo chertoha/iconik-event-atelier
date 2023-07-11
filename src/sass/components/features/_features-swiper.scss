@@ -1,5 +1,6 @@
 .features-swiper {
     width: 100%;
+
 }
 
 .features-swiper__wrapper {
@@ -21,12 +22,19 @@
 
 .swiper-button-prev.features-swiper__prev,
 .swiper-button-next.features-swiper__next {
-    --swiper-navigation-top-offset: 216px;
-    --swiper-navigation-sides-offset: 0;
+    // --swiper-navigation-top-offset: 216px;
+    // --swiper-navigation-sides-offset: 0;
+
+    --swiper-navigation-size: 0;
+
+
+    position: static;
 
     display: flex;
     align-items: center;
     justify-content: center;
+    flex-shrink: 0;
+
     width: 50px;
     height: 50px;
 
@@ -35,8 +43,8 @@
     @include mq('tablet') {
         width: 70px;
         height: 70px;
-        --swiper-navigation-top-offset: 350px;
-        --swiper-navigation-sides-offset: 0;
+        // --swiper-navigation-top-offset: 350px;
+        // --swiper-navigation-sides-offset: 0;
     }
 
     @include mq('laptop') {
@@ -57,7 +65,52 @@
     }
 }
 
-.feature-swiper__pagination {
-    width: 100px;
-    height: 5px;
+
+.features-swiper__btn-wrapper {
+    padding-top: 16px;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    column-gap: 50px;
+
+    @include mq('laptop') {
+        display: none;
+    }
+
+}
+
+.features-swiper__pagination {
+    height: 4px;
+    width: 100%;
+    max-width: 200px;
+    // min-width: 80px;
+
+    // background-color: tomato;
+}
+
+.features-swiper__dot {
+    position: absolute;
+    top: 0;
+
+    transform: translateX(-50%);
+
+
+    width: 4px;
+    height: 4px;
+    border-radius: 50%;
+
+    background-color: $secondary-background-color;
+}
+
+.features-swiper__line {
+    position: absolute;
+    top: 0;
+
+
+    // transform: translateX(-50%);
+
+
+    height: 4px;
+
+    background-color: $secondary-background-color;
 }

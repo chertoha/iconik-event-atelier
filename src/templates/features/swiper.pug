@@ -8,7 +8,7 @@ block features-swiper
         .swiper.features-swiper
             .swiper-wrapper.features-swiper__wrapper
                 each item in list 
-                    .swiper-slide.features-swiper__item 
+                    .swiper-slide.features-swiper__item.js-features-item 
                         .feature-card   
                             svg.icon.feature-card__icon
                                 use(href="./assets/images/icons.svg#" + item.iconSpriteId)
@@ -16,11 +16,26 @@ block features-swiper
                             p.feature-card__text #{item.text}   
 
 
-        .swiper-pagination
 
-        button(type="button").button.swiper-button-prev.swiper__prev.features-swiper__prev.features__prev
+            //- .swiper-pagination.features-swiper__pagination
+    .features-swiper__btn-wrapper
+        button(type="button").button.swiper-button-prev.swiper__prev.features-swiper__prev.features__prev.js-features-prev
             svg.icon
                 use(href="./assets/images/icons.svg#prev-arrow") 
-        button(type="button").button.swiper-button-next.swiper__next.features-swiper__next.features__next
+
+        .features-swiper__pagination.js-progress-paginator
+
+        button(type="button").button.swiper-button-next.swiper__next.features-swiper__next.features__next.js-features-next
             svg.icon
-                use(href="./assets/images/icons.svg#next-arrow") 
+                use(href="./assets/images/icons.svg#next-arrow")      
+
+        //- button(type="button").button.features-swiper__prev.features__prev.js-features-prev
+        //-     svg.icon
+        //-         use(href="./assets/images/icons.svg#prev-arrow") 
+
+        //- button(type="button").button.features-swiper__next.features__next.js-features-next
+        //-     svg.icon
+        //-         use(href="./assets/images/icons.svg#next-arrow")  
+
+
+
