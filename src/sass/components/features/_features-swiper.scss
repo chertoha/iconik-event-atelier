@@ -71,7 +71,7 @@
     display: flex;
     justify-content: space-between;
     align-items: center;
-    column-gap: 50px;
+    // column-gap: 50px;
 
     @include mq('laptop') {
         display: none;
@@ -82,10 +82,12 @@
 .features-swiper__pagination {
     height: 4px;
     width: 100%;
-    max-width: 200px;
-    // min-width: 80px;
+    max-width: 80px;
 
-    // background-color: tomato;
+    @include mq('tablet') {
+        max-width: 200px;
+    }
+
 }
 
 .features-swiper__dot {

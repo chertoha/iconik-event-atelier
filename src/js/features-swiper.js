@@ -9,11 +9,6 @@ const featureSwiper = new Swiper(".features-swiper", {
   modules: [Navigation, Pagination],
 
   direction: "horizontal",
-
-  // pagination: {
-  //   el: ".swiper-pagination",
-  //   type: "progressbar",
-  // },
 });
 
 //Progress bar ----------------------------------------------------
