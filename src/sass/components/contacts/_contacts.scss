@@ -22,3 +22,9 @@
     position: relative;
     width: 100%;
 }
+
+.contacts__swiper-prev,
+.contacts__swiper-next {
+    --swiper-navigation-top-offset: 37%;
+    --swiper-navigation-sides-offset: -4%;
+}

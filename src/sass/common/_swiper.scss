@@ -29,3 +29,37 @@
         stroke: #000000;
     }
 }
+
+
+//------------------------------------------------------------
+.swiper-button-prev.swiper-prev,
+.swiper-button-next.swiper-next {
+    @include mq('not-laptop') {
+        display: none;
+    }
+
+    // --swiper-navigation-top-offset: 37%;
+    // --swiper-navigation-sides-offset: -4%;
+    width: 100px;
+    height: 100px;
+    border-radius: 50%;
+    border: 1.5px solid $primary-text-color;
+    @include default-transition(background-color);
+
+    &::after {
+        display: none;
+    }
+
+    &>.icon {
+        stroke: $primary-text-color;
+    }
+}
+
+.swiper-button-prev.swiper-prev:hover,
+.swiper-button-next.swiper-next:hover {
+    background-color: $primary-text-color;
+
+    &>.icon {
+        stroke: #000000;
+    }
+}

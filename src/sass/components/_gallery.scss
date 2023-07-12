@@ -1,4 +1,4 @@
-.gallery__container {
+.container--gallery {
     @include mq('mobile-only') {
         padding-left: 0;
         padding-right: 0;

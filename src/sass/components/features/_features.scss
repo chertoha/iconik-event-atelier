@@ -21,3 +21,73 @@
     // position: relative;
     width: 100%;
 }
+
+.features__swiper-btn-wrapper {
+    padding-top: 16px;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    // column-gap: 50px;
+
+    @include mq('laptop') {
+        display: none;
+    }
+
+}
+
+.swiper-button-prev.features__swiper-prev,
+.swiper-button-next.features__swiper-next {
+    // --swiper-navigation-top-offset: 216px;
+    // --swiper-navigation-sides-offset: 0;
+
+    --swiper-navigation-size: 0;
+
+
+    position: static;
+
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    flex-shrink: 0;
+
+    width: 50px;
+    height: 50px;
+
+
+
+    @include mq('tablet') {
+        width: 70px;
+        height: 70px;
+        // --swiper-navigation-top-offset: 350px;
+        // --swiper-navigation-sides-offset: 0;
+    }
+
+    @include mq('laptop') {
+        display: none;
+    }
+
+
+    &>.icon {
+
+        width: 18px;
+        height: 18px;
+
+
+        @include mq('tablet') {
+            width: 24px;
+            height: 24px;
+        }
+    }
+}
+
+
+.features__swiper-pagination {
+    height: 4px;
+    width: 100%;
+    max-width: 80px;
+
+    @include mq('tablet') {
+        max-width: 200px;
+    }
+
+}

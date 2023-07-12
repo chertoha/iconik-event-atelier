@@ -19,56 +19,8 @@
     }
 }
 
-.contacts-swiper__prev,
-.contacts-swiper__next {
-    --swiper-navigation-top-offset: 37%;
-    --swiper-navigation-sides-offset: -4%;
-}
-
-// .contacts-swiper__next {}
-
-
-
 // .contacts-swiper__prev,
 // .contacts-swiper__next {
-//     @include mq('mobile-only') {
-//         display: none;
-//     }
-
-//     position: absolute;
-
-//     z-index: 999;
-
-//     display: flex;
-//     align-items: center;
-//     justify-content: center;
-
-//     width: 100px;
-//     height: 100px;
-//     border-radius: 50%;
-//     border: 1.5px solid $primary-text-color;
-//     @include default-transition(background-color);
-
-//     &>.icon {
-//         stroke: $primary-text-color;
-//     }
-// }
-
-// .contacts-swiper__prev:hover,
-// .contacts-swiper__next:hover {
-//     background-color: $primary-text-color;
-
-//     &>.icon {
-//         stroke: #000000;
-//     }
-// }
-
-// .contacts-swiper__prev {
-//     top: 50%;
-//     left: -10px;
-// }
-
-// .contacts-swiper__next {
-//     top: 50%;
-//     left: 50%;
+//     --swiper-navigation-top-offset: 37%;
+//     --swiper-navigation-sides-offset: -4%;
 // }
