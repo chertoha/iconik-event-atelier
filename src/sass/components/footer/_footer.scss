@@ -12,17 +12,6 @@
     }
 }
 
-// .footer__container {
-// padding-top: 50px;
-// padding-bottom: 56px;
-
-// @include mq('tablet') {
-//     padding-top: 120px;
-//     padding-right: 0;
-//     padding-left: 0;
-// }
-// }
-
 .footer__meta {
     padding-left: 15px;
     padding-right: 15px;
@@ -32,7 +21,6 @@
 
 
     @include mq('tablet') {
-        // width: 50%;
         padding-top: 120px;
         padding-right: 0;
         padding-left: 20px;
@@ -99,8 +87,6 @@
     }
 }
 
-.footer__copyright {}
-
 .footer__links {
     display: none;
 
@@ -116,8 +102,3 @@
         color: $accent-color;
     }
 }
-
-
-.footer__privacy {}
-
-.footer__club-rules {}

@@ -1,7 +1,5 @@
 import Swiper, { Navigation } from "swiper";
 
-// Swiper.use([Navigation, Pagination]);
-// init Swiper:
 const servicesSwiper = new Swiper(".services-swiper", {
   watchSlidesProgress: true,
 
@@ -11,12 +9,6 @@ const servicesSwiper = new Swiper(".services-swiper", {
 
   direction: "horizontal",
 
-  // If we need pagination
-  // pagination: {
-  //   el: ".swiper-pagination",
-  // },
-
-  // Navigation arrows
   navigation: {
     nextEl: ".swiper-button-next.js-services-next",
     prevEl: ".swiper-button-prev.js-services-prev",

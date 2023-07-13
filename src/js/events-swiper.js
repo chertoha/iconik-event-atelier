@@ -8,9 +8,4 @@ const eventsSwiper = new Swiper(".events-swiper", {
   modules: [Navigation],
 
   direction: "horizontal",
-
-  // navigation: {
-  //   nextEl: ".swiper-button-next",
-  //   prevEl: ".swiper-button-prev",
-  // },
 });

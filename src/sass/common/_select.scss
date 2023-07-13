@@ -14,8 +14,6 @@
 .select__list {
     display: none;
     position: absolute;
-    // top: 100%;
-    // left: 0;
     width: 100%;
     z-index: 999;
 
@@ -23,8 +21,6 @@
         display: block;
     }
 }
-
-.select__item {}
 
 .select__label {
     cursor: pointer;

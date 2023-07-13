@@ -1,10 +1,6 @@
 import "mapbox-gl/dist/mapbox-gl.css";
 import mapboxgl from "mapbox-gl";
 
-// TO MAKE THE MAP APPEAR YOU MUST
-// ADD YOUR ACCESS TOKEN FROM
-// https://account.mapbox.com
-
 mapboxgl.accessToken = process.env.MAPBOX_ACCESS_TOKEN;
 
 const map = new mapboxgl.Map({
@@ -65,16 +61,7 @@ const geojson = {
 };
 
 for (const feature of geojson.features) {
-  // create a HTML element for each feature
   const el = document.createElement("div");
   el.className = "map-marker";
-  // el.innerHTML = `<svg class="icon"><use href="./assets/images/icons.svg#info" /></svg>`;
-  // el.innerHTML = `i`;
-  // console.log(el.innerHTML);
-
-  // make a marker for each feature and add to the map
   new mapboxgl.Marker(el).setLngLat(feature.geometry.coordinates).addTo(map);
 }
-
-// svg.icon.social - article__info - icon;
-// use((href = "./assets/images/icons.svg#info"));

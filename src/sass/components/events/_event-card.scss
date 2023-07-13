@@ -57,18 +57,6 @@
         line-height: 1.5;
     }
 
-
-    // &::after {
-    //     display: inline;
-    //     content: '...';
-    //     // @include mq('mobile-only') {
-    //     //     display: inline;
-    //     //     content: '...';
-
-    //     // }
-    // }
-
-
 }
 
 
@@ -88,23 +76,12 @@
     }
 }
 
-// .event-card__title>span.non-visible {
-//     display: none;
-//     // @include mq('tablet') {
-//     //     display: inline;
-//     // }
-
-
-
-// }
-
 
 .event-card__play-btn {
     position: absolute;
     left: calc(50% - 25px);
     top: calc(50% - 25px);
     z-index: 3;
-    // transform: translate(-50%, -50%);
     background-color: transparent;
     border: 1px solid $secondary-background-color;
 

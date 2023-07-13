@@ -5,10 +5,6 @@
     margin-right: auto;
     max-width: 480px;
 
-    // background-color: $primary-background-color;
-
-    // outline: 1px solid green;
-
     @include mq('tablet') {
         max-width: none;
     }

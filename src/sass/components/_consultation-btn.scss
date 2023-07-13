@@ -13,8 +13,6 @@
     font-size: 16px;
     line-height: 1.692;
 
-    // background-color: $accent-color;
-
     @include mq('laptop') {
         margin-bottom: 0;
         margin-right: 30px;
@@ -25,9 +23,5 @@
     }
 
     @include default-transition(background-color);
-
-    // &:hover {
-    //     background-color: $accent-hovered-color;
-    // }
 
 }

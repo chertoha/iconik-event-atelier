@@ -2,7 +2,6 @@ const hiddenArticleList = document.querySelectorAll(".js-hidden-article-list");
 const cardList = document.querySelector(".js-offer-card-list");
 
 cardList.addEventListener("click", (e) => {
-  console.log(e.target);
   if (e.target.classList.contains("js-cta-btn")) {
     return;
   }

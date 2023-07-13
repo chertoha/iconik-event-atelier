@@ -4,7 +4,6 @@
 }
 
 .features-swiper__wrapper {
-    // column-gap: 10px;
 
     @include mq('tablet') {
         column-gap: calc((100% - 218px * 5) / 4);
@@ -12,7 +11,6 @@
 }
 
 .swiper-slide.features-swiper__item {
-    // width: 290px;
 
     @include mq('tablet') {
         flex-basis: 218px;
@@ -20,75 +18,7 @@
     }
 }
 
-// .swiper-button-prev.features-swiper__prev,
-// .swiper-button-next.features-swiper__next {
-//     // --swiper-navigation-top-offset: 216px;
-//     // --swiper-navigation-sides-offset: 0;
 
-//     --swiper-navigation-size: 0;
-
-
-//     position: static;
-
-//     display: flex;
-//     align-items: center;
-//     justify-content: center;
-//     flex-shrink: 0;
-
-//     width: 50px;
-//     height: 50px;
-
-
-
-//     @include mq('tablet') {
-//         width: 70px;
-//         height: 70px;
-//         // --swiper-navigation-top-offset: 350px;
-//         // --swiper-navigation-sides-offset: 0;
-//     }
-
-//     @include mq('laptop') {
-//         display: none;
-//     }
-
-
-//     &>.icon {
-
-//         width: 18px;
-//         height: 18px;
-
-
-//         @include mq('tablet') {
-//             width: 24px;
-//             height: 24px;
-//         }
-//     }
-// }
-
-
-// .features-swiper__btn-wrapper {
-//     padding-top: 16px;
-//     display: flex;
-//     justify-content: space-between;
-//     align-items: center;
-//     // column-gap: 50px;
-
-//     @include mq('laptop') {
-//         display: none;
-//     }
-
-// }
-
-// .features-swiper__pagination {
-//     height: 4px;
-//     width: 100%;
-//     max-width: 80px;
-
-//     @include mq('tablet') {
-//         max-width: 200px;
-//     }
-
-// }
 
 .features-swiper__dot {
     position: absolute;
@@ -107,10 +37,6 @@
 .features-swiper__line {
     position: absolute;
     top: 0;
-
-
-    // transform: translateX(-50%);
-
 
     height: 4px;
 

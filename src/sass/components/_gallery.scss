@@ -41,32 +41,22 @@
 
     @include mq('desktop') {
         display: block;
-        // height: 1405px;
-        // column-gap: 0;
     }
 }
 
 .gallery__col {
-    // display: inline-flex;
     display: flex;
     row-gap: 10px;
     column-gap: 10px;
     width: 155px;
-
     flex-direction: column;
-    // flex-wrap: wrap;
-    // height: 1390px;
-    // height: 782px;
-    // align-content: space-between;
     align-content: center;
 
     @include mq('tablet') {
         width: auto;
         flex-wrap: wrap;
-        // align-content: center;
         column-gap: 20px;
         row-gap: 20px;
-        // width: 27px;
     }
 
     @include mq('desktop') {
@@ -77,19 +67,7 @@
 
 }
 
-// .gallery__col {
-//     display: flex;
-//     flex-direction: column;
-//     flex-wrap: wrap;
-//     height: 1405px;
-//     align-content: space-between;
-// }
-
 .gallery__col--outside {
-
-    @include mq('tablet') {
-        // display: none;
-    }
 
     @include mq('laptop') {
         display: none;
@@ -101,9 +79,6 @@
 }
 
 .gallery__col--inside {
-    // align-content: center;
-    // column-gap: 10px;
-
 
     @include mq('tablet') {
         display: none;
@@ -114,8 +89,6 @@
     }
 
     @include mq('desktop') {
-        // column-gap: 20px;
-        // display: inline-flex;
         align-content: center;
         position: absolute;
         top: 0;

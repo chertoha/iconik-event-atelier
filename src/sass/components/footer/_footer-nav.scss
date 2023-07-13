@@ -9,8 +9,6 @@
     }
 }
 
-.footer-nav__list {}
-
 .footer-nav__item {
     @include set-items-margin(bottom, 25px);
 
@@ -22,5 +20,3 @@
         }
     }
 }
-
-.footer-nav__link {}

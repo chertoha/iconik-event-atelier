@@ -12,7 +12,6 @@
         padding-bottom: 120px;
         max-width: fit-content;
         display: flex;
-        // align-items: center;
         column-gap: 115px;
     }
 
@@ -91,8 +90,6 @@
 
     background-color: $footer-background-color;
 
-
-
     @include mq('tablet') {
         margin-top: 60px;
         width: 470px;
@@ -102,7 +99,5 @@
         margin-top: 0;
     }
 
-    @include mq('desktop') {
-        // margin-top: 0;
-    }
+
 }

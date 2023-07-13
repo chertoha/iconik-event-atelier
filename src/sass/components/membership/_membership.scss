@@ -53,9 +53,6 @@
     @include set-items-margin(bottom, 10px);
     margin-left: auto;
     margin-right: auto;
-
-    // outline: 1px solid tomato;
-
     max-width: 290px;
 
     @include mq('tablet') {
@@ -64,24 +61,19 @@
         margin-right: 0;
 
         margin-bottom: 0;
-        // flex-basis: 374px;
         flex-basis: calc((100% - 20px) / 2);
         max-width: 359px;
     }
 
     @include mq('laptop') {
-        // max-width: none;
-        // flex-basis: 374px;
         min-width: 359px;
         flex-basis: calc((100% - 60px) / 4);
         max-width: 455px;
-        // width: 455px;
     }
 
 
     @include mq('desktop') {
         max-width: none;
         flex-basis: 455px;
-        // width: 455px;
     }
 }
