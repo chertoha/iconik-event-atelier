@@ -2,13 +2,26 @@
     background-color: $footer-background-color;
 }
 
+.footer__logo-wrapper {
+    display: flex;
+    justify-content: center;
+
+    @include mq('tablet') {
+        justify-content: flex-start;
+    }
+}
+
 .footer__main {
 
     @include mq('tablet') {
         display: flex;
         justify-content: flex-end;
-        column-gap: 118px;
+        column-gap: 50px;
         height: 541px;
+    }
+
+    @include mq('laptop') {
+        column-gap: 118px;
     }
 }
 
@@ -30,9 +43,13 @@
 .footer__info {
     margin-top: 30px;
     display: flex;
-    justify-content: space-between;
+    justify-content: space-around;
 
     @include mq('tablet') {
+        column-gap: 60px;
+    }
+
+    @include mq('laptop') {
         column-gap: 130px;
     }
 }
