@@ -21,8 +21,10 @@
     "@babel/core": "^7.22.1",
     "@babel/parser": "^7.22.3",
     "@babel/types": "^7.22.3",
+    "@parcel/packager-raw-url": "^2.9.0",
     "@parcel/transformer-pug": "^2.9.0",
     "@parcel/transformer-sass": "^2.9.0",
+    "@parcel/transformer-webmanifest": "^2.9.0",
     "parcel": "^2.9.0"
   },
   "browserslist": "last 2 versions, not dead",
