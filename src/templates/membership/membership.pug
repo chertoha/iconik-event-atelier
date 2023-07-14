@@ -22,8 +22,10 @@ block membership-list
                                     p.article__text.article__text--extra #{article}
 
                     button(type="button" class=item.isVIP ? "offer-card__view-all-btn--lightmode" : "").button.offer-card__view-all-btn.js-offer-view-all-btn
-                        svg(width="16" height="16").icon
+                        svg(width="16" height="16" style="display:none").icon.js-offer-view-all-btn-minus-icon
+                            use(href="./assets/images/icons.svg#minus-icon")
+                        svg(width="16" height="16" style="display:block").icon.js-offer-view-all-btn-add-icon
                             use(href="./assets/images/icons.svg#add-icon")
-                        | VIEW ALL FEATURES
+                        span.offer-card__view-all-btn-text.js-offer-view-all-btn-text  VIEW ALL FEATURES    
 
                     a(href="#request-form").link.button.button--accent.offer-card-cta-btn.js-cta-btn Get a consultation

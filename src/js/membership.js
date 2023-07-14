@@ -13,6 +13,25 @@ cardList.addEventListener("click", (e) => {
     const targetCard = targetBtn.closest(".js-offer-card");
     const targetList = targetCard.querySelector(".js-hidden-article-list");
     targetList.classList.toggle("visually-hidden");
+
+    const targetBtnText = targetBtn.querySelector(
+      ".js-offer-view-all-btn-text"
+    );
+    const targetBtnMinusIcon = targetBtn.querySelector(
+      ".js-offer-view-all-btn-minus-icon"
+    );
+    const targetBtnAddIcon = targetBtn.querySelector(
+      ".js-offer-view-all-btn-add-icon"
+    );
+    if (targetList.classList.contains("visually-hidden")) {
+      targetBtnText.innerText = "VIEW ALL FEATURES";
+      targetBtnMinusIcon.style.display = "none";
+      targetBtnAddIcon.style.display = "block";
+    } else {
+      targetBtnText.innerText = "VIEW LESS FEATURES";
+      targetBtnMinusIcon.style.display = "block";
+      targetBtnAddIcon.style.display = "none";
+    }
   }
 });
 
