@@ -9,4 +9,3 @@ import "./membership";
 import "./contacts-swiper";
 import "./events-swiper";
 import "./mapbox";
-import "./progress-pagintator";
