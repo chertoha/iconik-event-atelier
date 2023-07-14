@@ -1,5 +1,5 @@
 
-# IconiK Event Atelier  
+# Iconik Event Atelier  
 
 It is a pet layout project for event studio   
 
