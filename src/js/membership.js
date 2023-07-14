@@ -1,3 +1,6 @@
+const BTN_TEXT_LESS_FEATURES = "VIEW LESS FEATURES";
+const BTN_TEXT_ALL_FEATURES = "VIEW ALL FEATURES";
+
 const hiddenArticleList = document.querySelectorAll(".js-hidden-article-list");
 const cardList = document.querySelector(".js-offer-card-list");
 
@@ -23,12 +26,13 @@ cardList.addEventListener("click", (e) => {
     const targetBtnAddIcon = targetBtn.querySelector(
       ".js-offer-view-all-btn-add-icon"
     );
+    njk;
     if (targetList.classList.contains("visually-hidden")) {
-      targetBtnText.innerText = "VIEW ALL FEATURES";
+      targetBtnText.innerText = BTN_TEXT_ALL_FEATURES;
       targetBtnMinusIcon.style.display = "none";
       targetBtnAddIcon.style.display = "block";
     } else {
-      targetBtnText.innerText = "VIEW LESS FEATURES";
+      targetBtnText.innerText = BTN_TEXT_LESS_FEATURES;
       targetBtnMinusIcon.style.display = "block";
       targetBtnAddIcon.style.display = "none";
     }
