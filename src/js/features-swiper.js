@@ -33,3 +33,11 @@ prevBtn.addEventListener("click", () => {
   featureSwiper.slidePrev();
   progressBar.prev();
 });
+
+featureSwiper.on("slideNextTransitionEnd", () => {
+  progressBar.next();
+});
+
+featureSwiper.on("slidePrevTransitionEnd", () => {
+  progressBar.prev();
+});
