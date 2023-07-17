@@ -26,7 +26,7 @@ cardList.addEventListener("click", (e) => {
     const targetBtnAddIcon = targetBtn.querySelector(
       ".js-offer-view-all-btn-add-icon"
     );
-    njk;
+
     if (targetList.classList.contains("visually-hidden")) {
       targetBtnText.innerText = BTN_TEXT_ALL_FEATURES;
       targetBtnMinusIcon.style.display = "none";
