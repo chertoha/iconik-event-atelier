@@ -6,7 +6,7 @@ block services-swiper
             .swiper-wrapper.services-swiper__wrapper
                 each item in list
                     .swiper-slide.services-swiper__item
-                        a(href="#").link.services-card                    
+                        .link.link--pointer.services-card                    
                             .services-card__img-wrapper
                                 img(srcset=item.img + " 1x," + item.img_retina + " 2x" src=item.img alt=item.title).services-card__img
                                 .services-card__img-overlay

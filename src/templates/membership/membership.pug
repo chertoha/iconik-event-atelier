@@ -4,7 +4,7 @@ block membership-list
     ul.membership__list.js-offer-card-list
         each item in list
             li.membership__item
-                a(href="" class=item.isVIP ? "offer-card--lightmode" : "").link.offer-card.js-offer-card
+                div(class=item.isVIP ? "offer-card--lightmode" : "").link.offer-card.js-offer-card
                     h3(class=item.isVIP ? "offer-card__title--lightmode" : "").offer-card__title #{item.title}
                     .offer-card__articles-wrapper   
                         ul.article-list
