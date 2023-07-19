@@ -13,4 +13,4 @@ block lang-list
                         input(type="radio" id="lang-"+item.id name="lang-list" checked).select__button.visually-hidden
                     else 
                         input(type="radio" id="lang-"+item.id name="lang-list").select__button.visually-hidden
-                    label(for=item.id).select__label.lang-btn__label.js-lang-label #{item.label}
+                    label(for="lang-"+item.id).select__label.lang-btn__label.js-lang-label #{item.label}
