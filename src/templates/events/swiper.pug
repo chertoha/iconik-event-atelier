@@ -1,12 +1,19 @@
 extends ../data/event-list.pug 
 
 block events-swiper 
+    - 
+        var imageBasePath = "./assets/images/events/";
+
     .swiper.events-swiper
         .swiper-wrapper.events-swiper__wrapper
             each item in list
                 .swiper-slide.events-swiper__item
                     .link.link--pointer.event-card
-                        img(srcset= "./assets/images/events/" + item.img + " 1x," + "./assets/images/events/" + item.img_retina + " 2x" src= "./assets/images/events/" + item.img alt=item.title).event-card__img
+                        picture.event-card__img
+                            source(srcset= imageBasePath + item.mob_1x + " 1x," + imageBasePath + item.mob_2x + " 2x" media="(max-width: 767.98px)" type="image/jpeg")
+                            source(srcset= imageBasePath +  item.desktop_1x + " 1x," + imageBasePath + item.desktop_2x + " 2x" media="(min-width: 768px)" type="image/jpeg")
+                            img(src= imageBasePath + item.mob_1x alt=item.alt).event-card__img
+
                         .event-card__title-wrapper
                             h3.event-card__title.js-trim-text #{item.title}
                         button(type="button").button.play-btn.event-card__play-btn 
