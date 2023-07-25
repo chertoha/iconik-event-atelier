@@ -34,12 +34,12 @@ section
                         .social-article__ref.social-ref
                             p.social-ref__title @iconik_event_atelier
                             p.social-ref__text Description here
-                        button.button.social-article__btn 
+                        button(type="button" aria-label="Follow socials").button.social-article__btn 
                             span.social-article__btn-text Follow
 
                     include social-gallery
 
-                    button(type="button").button.social-article__refresh-btn
+                    button(type="button" aria-label="Refresh social gallery").button.social-article__refresh-btn
                         svg.icon.social-article__refresh-icon
                             use(href="./assets/images/icons.svg#refresh-arrows")
                         | Load more    

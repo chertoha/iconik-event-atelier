@@ -10,7 +10,7 @@ block contacts-swiper
                             .contacts-card__img-wrapper
                                 img(loading="lazy" srcset= "./assets/images/contacts/" + item.img + " 1x," + "./assets/images/contacts/" + item.img_retina + " 2x" src= "./assets/images/contacts/" + item.img alt=item.name).contacts-card__img
                             .contacts-card__meta
-                                h4.contacts-card__name  #{item.name}
+                                h3.contacts-card__name  #{item.name}
                                 p.contacts-card__position #{item.position}
 
         button(type="button").button.swiper-button-prev.swiper-prev.contacts__swiper-prev.js-contacts-prev

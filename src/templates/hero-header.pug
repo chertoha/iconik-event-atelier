@@ -1,6 +1,6 @@
 .container.hero-wrapper 
     include header/index.pug
     include hero 
-    button(type="button").button.audio-btn.hero-wrapper__audio-btn.js-volume-btn
+    button(type="button" aria-label="Switch volume").button.audio-btn.hero-wrapper__audio-btn.js-volume-btn
         svg(width="36" height="28").icon.audio-btn__icon
             use(href="./assets/images/icons.svg#audio") 

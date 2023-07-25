@@ -20,7 +20,7 @@ const geojson = {
       },
       properties: {
         title: "Mapbox",
-        description: "Dubai",
+        description: "Dubai 1",
       },
     },
     {
@@ -31,7 +31,7 @@ const geojson = {
       },
       properties: {
         title: "Mapbox",
-        description: "Dubai",
+        description: "Dubai 2",
       },
     },
     {
@@ -42,7 +42,7 @@ const geojson = {
       },
       properties: {
         title: "Mapbox",
-        description: "Dubai",
+        description: "Dubai 3",
       },
     },
     {
@@ -53,14 +53,15 @@ const geojson = {
       },
       properties: {
         title: "Mapbox",
-        description: "Dubai",
+        description: "Dubai 4",
       },
     },
   ],
 };
 
 for (const feature of geojson.features) {
-  const el = document.createElement("div");
-  el.className = "map-marker";
+  const el = document.createElement("button");
+  // el.setAttribute("aria-label", feature.properties.description);
+  el.className = "map-marker button";
   new Marker(el).setLngLat(feature.geometry.coordinates).addTo(map);
 }
