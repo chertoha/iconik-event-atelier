@@ -12,7 +12,7 @@ block events-swiper
                         picture.event-card__img
                             source(srcset= imageBasePath + item.mob_1x + " 1x," + imageBasePath + item.mob_2x + " 2x" media="(max-width: 767.98px)" type="image/jpeg")
                             source(srcset= imageBasePath +  item.desktop_1x + " 1x," + imageBasePath + item.desktop_2x + " 2x" media="(min-width: 768px)" type="image/jpeg")
-                            img(src= imageBasePath + item.mob_1x alt=item.alt).event-card__img
+                            img(src= imageBasePath + item.mob_1x alt=item.alt loading="lazy").event-card__img
 
                         .event-card__title-wrapper
                             h3.event-card__title.js-trim-text #{item.title}

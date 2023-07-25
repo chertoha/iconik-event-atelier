@@ -15,7 +15,7 @@ block gallery-image-list
                                 picture.gallery__img
                                     source(srcset= imageBasePath + item.mob_1x + " 1x," + imageBasePath + item.mob_2x + " 2x" media="(max-width: 767.98px)" type="image/jpeg")
                                     source(srcset= imageBasePath +  item.desktop_1x + " 1x," + imageBasePath + item.desktop_2x + " 2x" media="(min-width: 768px)" type="image/jpeg")
-                                    img(src= imageBasePath + item.mob_1x alt=item.alt).gallery__img
+                                    img(src= imageBasePath + item.mob_1x alt=item.alt loading="lazy").gallery__img
 
                     .gallery__col.gallery__col--inside 
                         each item in insideList 
@@ -23,5 +23,5 @@ block gallery-image-list
                                 picture.gallery__img
                                     source(srcset= imageBasePath + item.mob_1x + " 1x," + imageBasePath + item.mob_2x + " 2x" media="(max-width: 767.98px)" type="image/jpeg")
                                     source(srcset= imageBasePath +  item.desktop_1x + " 1x," + imageBasePath + item.desktop_2x + " 2x" media="(min-width: 768px)" type="image/jpeg")
-                                    img(src= imageBasePath + item.mob_1x alt=item.alt).gallery__img
+                                    img(src= imageBasePath + item.mob_1x alt=item.alt loading="lazy").gallery__img
 
