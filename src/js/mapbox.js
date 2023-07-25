@@ -1,13 +1,12 @@
 import "mapbox-gl/dist/mapbox-gl.css";
-import mapboxgl from "mapbox-gl";
+import { Map, Marker } from "mapbox-gl";
 
-mapboxgl.accessToken = process.env.MAPBOX_ACCESS_TOKEN;
-
-const map = new mapboxgl.Map({
+const map = new Map({
   container: "js-footer-map", // container ID
   style: "mapbox://styles/chertoha/cljcorzmr005n01o40t8e3je8", // style URL
   center: [55.1458, 25.083], // starting position [lng, lat]
   zoom: 12, // starting zoom
+  accessToken: process.env.MAPBOX_ACCESS_TOKEN,
 });
 
 const geojson = {
@@ -63,5 +62,5 @@ const geojson = {
 for (const feature of geojson.features) {
   const el = document.createElement("div");
   el.className = "map-marker";
-  new mapboxgl.Marker(el).setLngLat(feature.geometry.coordinates).addTo(map);
+  new Marker(el).setLngLat(feature.geometry.coordinates).addTo(map);
 }
