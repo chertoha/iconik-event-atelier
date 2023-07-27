@@ -6,6 +6,7 @@ It is a pet layout project for event studio
 ## Tech Stack
 
 **Client:** Parcel, HTML/PUG, CSS/SASS, JavaScript, BEM 
+**Libs:** Swiper js, Mapbox 
 
 
 ## Authors
