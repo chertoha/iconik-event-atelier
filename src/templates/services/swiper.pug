@@ -11,11 +11,9 @@ block services-swiper
                     .swiper-slide.services-swiper__item
                         .link.link--pointer.services-card                    
                             .services-card__img-wrapper
-                                //- img(srcset=item.img + " 1x," + item.img_retina + " 2x" src=item.img alt=item.title).services-card__img
                                 picture.services-card__img
                                     source(srcset= imageBasePath + item.mob_1x + " 1x," + imageBasePath + item.mob_2x + " 2x" media="(max-width: 767.98px)" type="image/jpeg")
                                     source(srcset= imageBasePath +  item.desktop_1x + " 1x," + imageBasePath + item.desktop_2x + " 2x" media="(min-width: 768px)" type="image/jpeg")
-                                    //- img(src= imageBasePath + item.mob_1x alt=item.alt loading="lazy" sizes="(max-width: 767.98px) 265px, 360px").services-card__img
                                     img(src= imageBasePath + item.mob_1x alt=item.alt loading="lazy" width="265" height="331").services-card__img
 
                                 .services-card__img-overlay

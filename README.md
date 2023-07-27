@@ -35,3 +35,10 @@ To run this project, you will need to add the following environment variables to
 `MAPBOX_ACCESS_TOKEN`
 
 
+## Optimization screenshots
+
+### Mobile 
+![App Screenshot](./assets/iconik-mobile-lighthouse-27-07-23.jpg)
+
+### Desktop 
+![App Screenshot](./assets/iconik-desktop-lighthouse-27-07-23.jpg)

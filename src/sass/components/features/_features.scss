@@ -1,6 +1,5 @@
 .features {
     padding-top: 60px;
-    // padding-bottom: 60px;
     padding-bottom: 125px;
 
     @include mq('tablet') {
@@ -18,7 +17,6 @@
 }
 
 .features__swiper-wrapper {
-    // position: relative;
     width: 100%;
 }
 
@@ -27,7 +25,6 @@
     display: flex;
     justify-content: space-between;
     align-items: center;
-    // column-gap: 50px;
 
     @include mq('laptop') {
         display: none;
@@ -37,8 +34,6 @@
 
 .swiper-button-prev.features__swiper-prev,
 .swiper-button-next.features__swiper-next {
-    // --swiper-navigation-top-offset: 216px;
-    // --swiper-navigation-sides-offset: 0;
 
     --swiper-navigation-size: 0;
 
@@ -58,8 +53,6 @@
     @include mq('tablet') {
         width: 70px;
         height: 70px;
-        // --swiper-navigation-top-offset: 350px;
-        // --swiper-navigation-sides-offset: 0;
     }
 
     @include mq('laptop') {

@@ -1,5 +1,3 @@
-// import "~node_modules/swiper/css";
-
 import "./trim-offset-height";
 import "./lang-select";
 import "./mobile-menu";
