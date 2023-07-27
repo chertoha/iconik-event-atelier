@@ -61,7 +61,6 @@ const geojson = {
 
 for (const feature of geojson.features) {
   const el = document.createElement("button");
-  // el.setAttribute("aria-label", feature.properties.description);
   el.className = "map-marker button";
   new Marker(el).setLngLat(feature.geometry.coordinates).addTo(map);
 }

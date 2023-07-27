@@ -26,7 +26,8 @@
     "@parcel/transformer-pug": "^2.9.0",
     "@parcel/transformer-sass": "^2.9.0",
     "@parcel/transformer-webmanifest": "^2.9.0",
-    "parcel": "^2.9.0"
+    "parcel": "^2.9.0",
+    "parcel-reporter-clean-dist": "^1.0.4"
   },
   "browserslist": "last 2 versions, not dead",
   "dependencies": {
