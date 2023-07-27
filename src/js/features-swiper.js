@@ -32,10 +32,6 @@ prevBtn.addEventListener("click", () => {
   featureSwiper.slidePrev();
 });
 
-featureSwiper.on("slideNextTransitionEnd", () => {
-  progressBar.next();
-});
-
-featureSwiper.on("slidePrevTransitionEnd", () => {
-  progressBar.prev();
+featureSwiper.on("slideChange", () => {
+  progressBar.setPosition(featureSwiper.activeIndex);
 });

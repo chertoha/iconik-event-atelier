@@ -46,6 +46,11 @@ export class ProgressBar {
     }
   }
 
+  setPosition(posistion) {
+    this.pos = posistion;
+    this.#linePos(this.pos);
+  }
+
   #linePos(position) {
     this.lineEl.style.left = `${(position / this.itemsNum) * 100}%`;
   }
