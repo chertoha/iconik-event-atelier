@@ -26,12 +26,10 @@ const prevBtn = document.querySelector(".js-features-prev");
 
 nextBtn.addEventListener("click", () => {
   featureSwiper.slideNext();
-  progressBar.next();
 });
 
 prevBtn.addEventListener("click", () => {
   featureSwiper.slidePrev();
-  progressBar.prev();
 });
 
 featureSwiper.on("slideNextTransitionEnd", () => {
