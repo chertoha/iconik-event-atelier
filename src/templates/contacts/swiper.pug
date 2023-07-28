@@ -1,6 +1,9 @@
 extends ../data/contact-list.pug
 
 block contacts-swiper
+    - 
+        var imageBasePath = "./assets/images/contacts/";
+
     .contacts__swiper-wrapper
         .swiper.contacts-swiper
             .swiper-wrapper.contacts-swiper__wrapper
@@ -8,7 +11,12 @@ block contacts-swiper
                     .swiper-slide.contacts-swiper__item
                         .contacts-card
                             .contacts-card__img-wrapper
-                                img(loading="lazy" width="265" height="322" srcset= "./assets/images/contacts/" + item.img + " 1x," + "./assets/images/contacts/" + item.img_retina + " 2x" src= "./assets/images/contacts/" + item.img alt=item.name).contacts-card__img
+                                //- img(loading="lazy" width="265" height="322" srcset= "./assets/images/contacts/" + item.img + " 1x," + "./assets/images/contacts/" + item.img_retina + " 2x" src= "./assets/images/contacts/" + item.img alt=item.name).contacts-card__img
+                                picture.contacts-card__img
+                                    source(srcset= imageBasePath + item.mob_1x + " 1x," + imageBasePath + item.mob_2x + " 2x" media="(max-width: 767.98px)" type="image/jpeg")
+                                    source(srcset= imageBasePath +  item.desktop_1x + " 1x," + imageBasePath + item.desktop_2x + " 2x" media="(min-width: 768px)" type="image/jpeg")
+                                    img(src= imageBasePath + item.mob_1x alt=item.name loading="lazy" width="265" height="322").contacts-card__img
+
                             .contacts-card__meta
                                 h3.contacts-card__name  #{item.name}
                                 p.contacts-card__position #{item.position}
